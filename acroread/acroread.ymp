@@ -1,0 +1,116 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group>
+    <repositories>
+      <repository recommended="true">
+        <name>home:torhans</name>
+        <summary>torhans's Home Project</summary>
+        <description>So far this is just a test</description>
+        <url>http://download.opensuse.org/repositories/home:/torhans/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="true">
+        <name>devel:tools:compiler</name>
+        <summary>Various compilers</summary>
+        <description>Various compilers</description>
+        <url>http://download.opensuse.org/repositories/devel:/tools:/compiler/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="true">
+        <name>Education</name>
+        <summary>Applications for education users</summary>
+        <description>This Project contains several packages which might be interesting for educational use.
+
+Have a look at http://en.opensuse.org/Category:Applications:Education for details.</description>
+        <url>http://download.opensuse.org/repositories/Education/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="true">
+        <name>science</name>
+        <summary>Software for Scientists and Engineers</summary>
+        <description>This project provides software for engineering and natural science.
+http://en.opensuse.org/Portal:Science
+
+If you like to help to maintain the repository, please contact the respective maintainer:
+http://en.opensuse.org/openSUSE:Science_team
+
+For electrical engineering see electronics project:
+https://build.opensuse.org/project/show/electronics</description>
+        <url>http://download.opensuse.org/repositories/science/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Leap:42.3</name>
+        <summary>openSUSE Leap 42.3</summary>
+        <description></description>
+        <url>http://download.opensuse.org/distribution/leap/42.3/repo/oss/</url>
+      </repository>
+      <repository recommended="true">
+        <name>CrossToolchain:avr</name>
+        <summary>Crosscompiling Toolchain for ATMEL AVR microcontrollers</summary>
+        <description>Install avr-example.rpm to get all required packages automatically resolved.</description>
+        <url>http://download.opensuse.org/repositories/CrossToolchain:/avr/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="true">
+        <name>devel:languages:go</name>
+        <summary>The Go Programming Language</summary>
+        <description>This repository contains packages related to the Go programming language (designed by Robert Griesemer, Rob Pike and Ken Thompson).
+
+Go is an expressive, concurrent, garbage collected systems programming language that is type safe and memory safe. It has pointers but no pointer arithmetic. Go has fast builds, clean syntax, garbage collection, methods for any type, and run-time reflection. It feels like a dynamic language but has the speed and safety of a static language.
+
+http://en.opensuse.org/openSUSE:Packaging_Go</description>
+        <url>http://download.opensuse.org/repositories/devel:/languages:/go/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="true">
+        <name>Java:packages</name>
+        <summary>Factory Java packages</summary>
+        <description>      This is the Java:packages project. Its main purpose is to serve as development
+      project for packages around the topic of Java in the openSUSE:Factory
+      distribution. If you want to participate you can contact us individually
+      or use our mailinglist opensuse-java@opensuse.org. Please
+      report bugs to the respective bugowners as set.
+
+      This project also provides *unoficial* backports of newest packages to
+      current latest openSUSE release. The packages are *not* testested and might
+      randomly break.
+
+  </description>
+        <url>http://download.opensuse.org/repositories/Java:/packages/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="false">
+        <name>devel:languages:python</name>
+        <summary>Python Modules</summary>
+        <description>This project provides Python modules and Django apps. The Python interpreter itself is developed at devel:languages:python:Factory.
+
+The Python packaging policies are found at http://en.opensuse.org/openSUSE:Packaging_Python
+
+The project is focused on maintaining reasonable closeness to upstream
+versions while at the same time trying to make packages available for a
+number of distributions/build targets.
+
+Build targets are those distributions that are actively maintained, and these are enabled by default. All
+other distributions, if related to an actively maintained distribution,
+are disabled by default but available at the project level such that
+individual packages may be enabled to build against those targets. Distributions that have reached EOL aget removed.
+
+Exceptions: SLE 11 SP4, while actively maintained is disabled by default as there is no Python 3 interpreter, Python 2.6.9 is really old and having a single spec implementation is rather cumbersome.</description>
+        <url>http://download.opensuse.org/repositories/devel:/languages:/python/openSUSE_Leap_42.3/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>acroread</name>
+        <summary>Adobe Reader for PDF Files</summary>
+        <description>Acroread is a well known PDF viewer.
+
+Adobe Reader is often the only program able to process complicated PDF
+files, such as PDF forms. However, there are many bugs where we cannot
+do anything about because it is proprietary binary-only software.
+
+Please consider whether it is possible to use free PDF readers like
+okular, evince, xpdf, ghostview, ... instead.
+
+
+
+Authors:
+--------
+    Adobe Systems Incorporated</description>
+      </item>
+    </software>
+  </group>
+</metapackage>
