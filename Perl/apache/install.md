@@ -2,7 +2,16 @@
 
 # For standard run the following as root:
 # Add repository openSUSE_Leap_42.3
-
+```
+zypper addrepo http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_42.3/devel:languages:perl.repo
+```
+```
+zypper refresh
+```
+```
+zypper install perl-Module-Install-Repository
+```
+# Manual
 ```
 [devel_languages_perl]
 name=perl modules (openSUSE_Leap_42.3)
