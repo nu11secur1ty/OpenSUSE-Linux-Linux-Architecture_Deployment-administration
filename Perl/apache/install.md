@@ -1,14 +1,15 @@
 
 
 # For standard run the following as root:
-# Add repository
+# Add repository openSUSE_Leap_42.3
+
 ```
 [devel_languages_perl]
-name=perl modules (openSUSE_Tumbleweed)
+name=perl modules (openSUSE_Leap_42.3)
 type=rpm-md
-baseurl=http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Tumbleweed/
+baseurl=http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_42.3/
 gpgcheck=1
-gpgkey=http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Tumbleweed/repodata/repomd.xml.key
+gpgkey=http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_42.3/repodata/repomd.xml.key
 enabled=1
 ```
 # Refresh
