@@ -1,0 +1,27 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group>
+    <repositories>
+      <repository recommended="true">
+        <name>devel:languages:perl</name>
+        <summary>perl modules</summary>
+        <description>various perl modules and tools</description>
+        <url>http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_42.3/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:Leap:42.3</name>
+        <summary>openSUSE Leap 42.3</summary>
+        <description></description>
+        <url>http://download.opensuse.org/repositories/openSUSE:/Leap:/42.3/standard/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>perl-Module-Install-Repository</name>
+        <summary>Automatically sets repository URL from svn/svk/Git checkout</summary>
+        <description>Module::Install::Repository is a Module::Install plugin to automatically
+figure out repository URL and set it via _repository()_ which then will be
+added to resources under _META.yml_.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>
