@@ -17,7 +17,7 @@ zypper install perl-Module-Install-Repository
 ```
 vim /etc/zypp/repos.d/perl_mod.repo
 ```
-# Add inside
+- Add inside
 ```
 [devel_languages_perl]
 name=perl modules (openSUSE_Leap_42.3)
@@ -27,11 +27,11 @@ gpgcheck=1
 gpgkey=http://download.opensuse.org/repositories/devel:/languages:/perl/openSUSE_Leap_42.3/repodata/repomd.xml.key
 enabled=1
 ```
-# Refresh
+- Refresh
 ```
 zypper refresh
 ```
-# Install
+- Install
 ```
 zypper install perl-Module-Install-Repository
 ```
