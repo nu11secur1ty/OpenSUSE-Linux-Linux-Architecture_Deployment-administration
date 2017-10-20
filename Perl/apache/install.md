@@ -12,6 +12,12 @@ zypper refresh
 zypper install perl-Module-Install-Repository
 ```
 # Manual
+
+
+```
+vim /etc/zypp/repos.d/perl_mod.repo
+```
+# Add inside
 ```
 [devel_languages_perl]
 name=perl modules (openSUSE_Leap_42.3)
