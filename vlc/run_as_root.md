@@ -3,7 +3,7 @@
 ```
 su -
 ```
-# Run this command:
+- Run this command:
 ```
 sed -i 's/geteuid/getppid/' /usr/bin/vlc
 ```
