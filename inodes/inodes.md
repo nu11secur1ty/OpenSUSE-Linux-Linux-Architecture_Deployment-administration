@@ -1,6 +1,8 @@
 
 # Inodes - an Introduction
 
+-------------------------------------------------------------------------------------------------------------------
+
 We are used to thinking about a directory containing files. This is really an illusion. Directories do not contain files. The data of the files is not stored in the directory.
 
 ------------------------------------------------------------------------------------------------------------------
