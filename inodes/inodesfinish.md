@@ -19,7 +19,7 @@ Advertisement
 
 --------------------------------------------------------------------------------------------------------------------
 
-#First off, you generally can’t increase the available inode# count on your system without formatting the drive and reserving a larger chunk of space for a larger filesystem inode table. 
+# First off, you generally can’t increase the available inode count on your system without formatting the drive and reserving a larger chunk of space for a larger filesystem inode table. 
 Increasing a drive’s inodes that way is usually inconvenient and often not really the solution you’re looking for anyway.
 
 -------------------------------------------------------------------------------------------------------------------
