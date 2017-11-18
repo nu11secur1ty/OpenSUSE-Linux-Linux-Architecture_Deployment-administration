@@ -352,5 +352,5 @@ sudo openvpn --config client1.ovpn
 # Have setup with nu11secur1ty =)
 
 # Resource:
-![VPN](https://en.opensuse.org/SDB:OpenVPN_Installation_and_Setup)
+[VPN](https://en.opensuse.org/SDB:OpenVPN_Installation_and_Setup)
 
