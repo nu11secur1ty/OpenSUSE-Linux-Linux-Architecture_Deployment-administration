@@ -28,12 +28,12 @@ $ sudo apt-get install linux-source
 ```
 # Tools
 ```
-apt install libncurses5-dev libncursesw5-dev
-install ncurses-devel
-apt install gcc
+$ apt install libncurses5-dev libncursesw5-dev
+$ install ncurses-devel
+$ apt install gcc
 - RHEL:
-yum install ncurses-devel
-dnf install ncurses-devel
+$ yum install ncurses-devel
+$ dnf install ncurses-devel
 ```
 
 
