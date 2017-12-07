@@ -4,7 +4,6 @@ Type the following apt-cache command :
 
 ```
 $ apt-cache search linux-headers-$(uname -r)
-$ apt install gcc
 ```
 
 # OR
@@ -27,6 +26,14 @@ $ sudo apt-get install build-essential
 $ sudo apt-get update
 $ sudo apt-get install linux-source 
 ```
-
+# Tools
+```
+apt install libncurses5-dev libncursesw5-dev
+install ncurses-devel
+apt install gcc
+- RHEL:
+yum install ncurses-devel
+dnf install ncurses-devel
+```
 
 
