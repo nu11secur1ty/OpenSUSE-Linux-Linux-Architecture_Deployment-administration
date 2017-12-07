@@ -4,6 +4,7 @@ Type the following apt-cache command :
 
 ```
 $ apt-cache search linux-headers-$(uname -r)
+$ apt install gcc
 ```
 
 # OR
