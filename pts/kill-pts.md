@@ -39,14 +39,14 @@ user       63590  0.0  0.0     15324  5392 pts/0    Ss+  Dec11   0:00 -bash
 
 # Search for pts/0 x.x.x.x Pid id
 ```
-ps -ft pts/6 -t pts/9 -t pts/10
+ps -ft pts/x -t pts/x -t pts/x
 ```
 # This would produce an output similar to:
 ```
 UID        PID  PPID  C STIME TTY          TIME CMD
-user       772  2701  0 15:26 pts/6    00:00:00 bash
-user       773  2701  0 16:26 pts/9    00:00:00 bash
-user       774  2701  0 17:26 pts/10   00:00:00 bash
+user       772  2701  0 15:26 pts/x    00:00:00 bash
+user       773  2701  0 16:26 pts/x    00:00:00 bash
+user       774  2701  0 17:26 pts/x    00:00:00 bash
 ```
 # Grab the PID from the result.
 - Use the PIDs to kill the processes:
