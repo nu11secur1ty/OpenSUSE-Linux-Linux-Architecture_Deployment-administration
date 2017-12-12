@@ -1,7 +1,9 @@
 # Find users activity
 ```
 $ ps -au 
+```
 - or
+```
 $ w
 ```
 # Other way
