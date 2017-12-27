@@ -1,9 +1,9 @@
 # Find Out Graphics Card Memory Size
-Open a terminal and type the lspci command
+- Open a terminal and type the lspci command
 ```
 $ lspci
 ```
-Output:
+- Output:
 ```
 00:00.0 Host bridge: Intel Corporation 82845G/GL[Brookdale-G]/GE/PE DRAM Controller/Host-Hub Interface (rev 03)
 # 00:02.0 VGA compatible controller: Intel Corporation 82845G/GL[Brookdale-G]/GE Chipset Integrated Graphics Device (rev 03)
