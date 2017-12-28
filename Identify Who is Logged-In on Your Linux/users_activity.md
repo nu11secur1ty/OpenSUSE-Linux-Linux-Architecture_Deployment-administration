@@ -44,3 +44,25 @@ ramesh   pts/0    dev-db-server        17:51  sshd: ramesh [priv]
 jason    pts/1    dev-db-server        20:36  -bash
 john     pts/2    dev-db-server         1.00s w -s
 ```
+# 2. Get the user name and process of logged in user using who and users command
+
+who command is used to get the list of the usernames who are currently logged in. Output of the who command contains the following columns: user name, tty number, date and time, machine address.
+
+
+```
+$ who
+ramesh pts/0        2009-03-28 22:57 (dev-db-server)
+jason  pts/1        2009-03-28 23:01 (dev-db-server)
+john   pts/2        2009-03-28 23:04 (dev-db-server)
+```
+
+# To get a list of all usernames that are currently logged in, use the following:
+
+
+```
+$ who | cut -d' ' -f1 | sort | uniq
+user1
+user2
+user3
+```
+
