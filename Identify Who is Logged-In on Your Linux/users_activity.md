@@ -2,21 +2,21 @@
 
 w command is used to show logged-in user names and what they are doing. The information will be read from /var/run/utmp file. The output of the w command contains the following columns:
 ```
-    Name of the user
-    User’s machine number or tty number
-    Remote machine address
-    User’s Login time
-    Idle time (not usable time)
-    Time used by all processes attached to the tty (JCPU time)
-    Time used by the current process (PCPU time)
-    Command currently getting executed by the users
+   - Name of the user
+   - User’s machine number or tty number
+   - Remote machine address
+   - User’s Login time
+   - Idle time (not usable time)
+   - Time used by all processes attached to the tty (JCPU time)
+   - Time used by the current process (PCPU time)
+   - Command currently getting executed by the users
 ```
  
 Following options can be used for the w command:
 ```
-    -h Ignore the header information
-    -u Display the load average (uptime output)
-    -s Remove the JCPU, PCPU, and login time.
+    - h Ignore the header information
+    - u Display the load average (uptime output)
+    - s Remove the JCPU, PCPU, and login time.
 ```
 
 ```
