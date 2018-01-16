@@ -172,4 +172,9 @@ admin:~ # cat <<EOT>> /etc/apache2/httpd.conf
 > EOT
 admin:~ # 
 ```
+# Now you have to restart apache server:
+
+```
+rcapache2 restart
+```
 
