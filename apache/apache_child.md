@@ -130,9 +130,23 @@ Mem:          3927       3594        332         26        198       2350
 Swap:         4607          0       4607
 ```
 # Optimize apache
+- MaxKeepAliveRequests
 
 ```
 echo -e "MaxKeepAliveRequests 500" >> /etc/apache2/httpd.conf
+```
+
+- KeepAliveTimeout
+```
+echo -e "KeepAliveTimeout 5" >> /etc/apache2/httpd.conf 
+```
+
+- KeepAlive
+```
+echo -e "KeepAlive On" >> /etc/apache2/httpd.conf
+```
+# Configure MPM Prefork
+
 ```
 
 
