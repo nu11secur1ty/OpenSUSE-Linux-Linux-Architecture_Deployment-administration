@@ -129,5 +129,11 @@ Mem:          3927       3594        332         26        198       2350
 -/+ buffers/cache:       1045       2881
 Swap:         4607          0       4607
 ```
+# Optimize apache
+
+```
+echo -e "MaxKeepAliveRequests 500" >> /etc/apache2/httpd.conf
+```
+
 
 
