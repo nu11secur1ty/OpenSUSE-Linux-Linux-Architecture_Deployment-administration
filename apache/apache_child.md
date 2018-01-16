@@ -146,8 +146,30 @@ echo -e "KeepAliveTimeout 5" >> /etc/apache2/httpd.conf
 echo -e "KeepAlive On" >> /etc/apache2/httpd.conf
 ```
 # Configure MPM Prefork
+- check if module is loaded
+```
+httpd -M | grep mpm
+- or
+apachectl -t -D DUMP_MODULES
 
 ```
+- output 
+```
+mpm_prefork_module (static)
+```
+# Make Apache performance better using the Apache MPM
 
-
+```
+admin:~ # cat <<EOT>> /etc/apache2/httpd.conf 
+> KeepAlive Off
+> <IfModule prefork.c>
+>    StartServers        5
+>    MinSpareServers     5
+>    MaxSpareServers     10
+>    MaxClients          150
+>    MaxRequestsPerChild 3000
+> </IfModule>
+> EOT
+admin:~ # 
+```
 
