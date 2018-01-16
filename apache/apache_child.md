@@ -35,7 +35,7 @@ KiB Swap:  4718588 total,        0 used,  4718588 free.  2404844 cached Mem
    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                 
  98099 root      20   0  108644   8560   6856 S 0.000 0.213   0:00.39 httpd-prefork
 ```
-# Check for avalible memory of the machine:
+# Check for available memory of the machine:
 
 ```
 free -m
@@ -51,43 +51,83 @@ Swap:         4607          0       4607
 ```
 # so we can get idle time for available memory 
 
-Now the confusing thing comes out.
-
-I will use AB (ApacheBench)  to run a test.
-Simulate the situation of 500 concurrent client visit.
-
 ```
-ab -n 10000 -c 500 http://0.0.0.0/index.xxxxxx
+ab -n 10000 -c 500 localhost/index.html
 ```
+- output:
+```
+This is ApacheBench, Version 2.3 <$Revision: 1748469 $>
+Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
+Licensed to The Apache Software Foundation, http://www.apache.org/
 
+Benchmarking localhost (be patient)
+Completed 1000 requests
+Completed 2000 requests
+Completed 3000 requests
+Completed 4000 requests
+Completed 5000 requests
+Completed 6000 requests
+Completed 7000 requests
+Completed 8000 requests
+Completed 9000 requests
+Completed 10000 requests
+Finished 10000 requests
+
+
+Server Software:        Apache
+Server Hostname:        localhost
+Server Port:            80
+
+Document Path:          /index.html
+Document Length:        45 bytes
+
+Concurrency Level:      500
+Time taken for tests:   0.992 seconds
+Complete requests:      10000
+Failed requests:        0
+Total transferred:      2750000 bytes
+HTML transferred:       450000 bytes
+Requests per second:    10081.73 [#/sec] (mean)
+Time per request:       49.595 [ms] (mean)
+Time per request:       0.099 [ms] (mean, across all concurrent requests)
+Transfer rate:          2707.50 [Kbytes/sec] received
+
+Connection Times (ms)
+              min  mean[+/-sd] median   max
+Connect:        0    1   1.2      0       8
+Processing:     2   21  95.7     10     921
+Waiting:        1   21  95.7      9     920
+Total:          7   22  96.5     10     928
+
+Percentage of the requests served within a certain time (ms)
+  50%     10
+  66%     11
+  75%     12
+  80%     13
+  90%     14
+  95%     16
+  98%     19
+  99%    920
+ 100%    928 (longest request)
 after run this test command in the client computer.
 
 The server's httpd process increased to 175.
 
 ```
+# Check the number of processes:
+
+```
 ps -ef | grep httpd | wc -l
-175
+12
 ```
 
 # then during this ab test, run free again to monitor the memory usage:
 
 ```
              total       used       free     shared    buffers     cached
-Mem:       2964056    2828572     135484          0     231684    2075648
--/+ buffers/cache:     521240    2442816
-Swap:      2097144        104    2097040
+Mem:          3927       3594        332         26        198       2350
+-/+ buffers/cache:       1045       2881
+Swap:         4607          0       4607
 ```
 
-available memory now is =2442816 / 1024 =2385MB.
-
-idle memory usage 2605MB - busy time memory usage 2385MB = 220MB.  Apache server increased nearly 160 child processes. but the memory usage only increased only 220MB memory usage.
-# According to the top command output, we know that each httpd child process will consume 10Mb memory nearly. so 160 httpd child processes will reach to 1600MB memory usage.
-
-29416 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.41 httpd
-
-# See number of Apache child processes
-
-```
-ps -ef | grep httpd | wc -l
-```
 
