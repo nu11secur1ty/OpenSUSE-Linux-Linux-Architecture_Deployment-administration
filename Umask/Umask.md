@@ -16,5 +16,7 @@ Mask        (requested permissions 777)              (requested permissions 666)
 077 	      600 (rw-------) 	                        700 (rwx------)
 277 	      400 (r--------) 	                        500 (r-x------)
 ```
-
-
+# Change umask on OpenSuse leep 42 and to the othet OS, you shuld find where is the bash "profile"
+```
+ echo -e "umask 014" >> /etc/profile && source /etc/profile
+```
