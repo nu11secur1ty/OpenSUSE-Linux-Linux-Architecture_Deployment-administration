@@ -3,34 +3,53 @@
 
 ```
 uname -a
-2.6.18-164.el5 #1 SMP Tue Aug 18 15:51:54 EDT 2009 i686 i686 i386 GNU/Linux
-
-During the idle time. run the top command. as below, you can see one httpd process will use nearly 10M RAM.
-
-PID USER      PR  NI  VIRT  RES  SHR S %CPU %MEM    TIME+  COMMAND
-13775 mysql     15   0  340m  53m 3980 S  0.0  1.8   0:44.82 mysqld
-15377 root      15   0 20204  10m 4684 S  0.0  0.4   0:00.58 httpd
-2798 root      34  19 26320  10m 2148 S  0.0  0.4   0:00.95 yum-updatesd
-29868 apache    15   0 21020  10m 3024 S  0.0  0.3   0:00.12 httpd
-29416 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.41 httpd
-29439 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.37 httpd
-29457 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.47 httpd
-29530 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.44 httpd
-29546 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.40 httpd
-29592 apache    15   0 21004  10m 2996 S  0.0  0.3   0:00.36 httpd
-29472 apache    15   0 21004  10m 2992 S  0.0  0.3   0:00.34 httpd
-29562 apache    15   0 21004  10m 2992 S  0.0  0.3   0:00.31 httpd
-29881 apache    15   0 21008  10m 2992 S  0.0  0.3   0:00.08 httpd
+Linux admin 4.4.104-39-default #1 SMP Thu Jan 4 08:11:03 UTC 2018 (7db1912) x86_64 x86_64 x86_64 GNU/Linux
 ```
-# Also use free command to monitor the memory usage status:
+# Check for apache pid
+```
+rcapache2 status
+```
+- output:
+```
+● apache2.service - The Apache Webserver
+   Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; vendor preset: disabled)
+   Active: active (running) since Tue 2018-01-16 08:03:15 EET; 46min ago
+ Main PID: 98099 (httpd-prefork)
+   Status: "Total requests: 0; Current requests/sec: 0; Current traffic:   0 B/sec"
+    Tasks: 11
+
+```
+# Check for using memory using top:
+```
+top -p 98099
+```
+- output:
+
+```
+top - 08:53:39 up 3 days, 39 min,  1 user,  load average: 0.16, 0.16, 0.09
+Tasks:   1 total,   0 running,   1 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.7 us,  0.5 sy,  0.2 ni, 97.7 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+KiB Mem:   4021584 total,  3755908 used,   265676 free,   203640 buffers
+KiB Swap:  4718588 total,        0 used,  4718588 free.  2404844 cached Mem
+
+   PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                                                                                                                 
+ 98099 root      20   0  108644   8560   6856 S 0.000 0.213   0:00.39 httpd-prefork
+```
+# Check for avalible memory of the machine:
+
+```
+free -m
+```
+- output:
 
 ```
              total       used       free     shared    buffers     cached
-Mem:       2964056    2602636     361420          0     231664    2074572
--/+ buffers/cache:     296400    2667656
-Swap:      2097144        104    2097040
+Mem:          3927       3594        333         25        198       2348
+-/+ buffers/cache:       1046       2880
+Swap:         4607          0       4607
+
 ```
-# so we can get idle time, available memory will be 2667656.  / 1024= 2605MB.
+# so we can get idle time for available memory 
 
 Now the confusing thing comes out.
 
