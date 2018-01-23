@@ -2,7 +2,7 @@
 ```
 sed '1!d' /etc/apache2/mods-available/dnssd.conf
 ```
-- output:
+- output: onli first line
 ```
 # This is the config file for mod_dnssd.
 ```
@@ -11,7 +11,7 @@ sed '1!d' /etc/apache2/mods-available/dnssd.conf
 ```
 sed -n '1,5p' /etc/apache2/mods-available/dnssd.conf 
 ```
-- output:
+- output: from one to five
 
 ```
 # This is the config file for mod_dnssd.
