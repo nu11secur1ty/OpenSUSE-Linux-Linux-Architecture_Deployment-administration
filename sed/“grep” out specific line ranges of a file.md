@@ -6,7 +6,7 @@ sed '1!d' /etc/apache2/mods-available/dnssd.conf
 ```
 # This is the config file for mod_dnssd.
 ```
-# Grep range of lines:
+# Grep range of lines from file:
 
 ```
 sed -n '1,5p' /etc/apache2/mods-available/dnssd.conf 
