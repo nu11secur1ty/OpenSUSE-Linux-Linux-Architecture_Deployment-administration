@@ -1,3 +1,7 @@
+# SUSE
+![link](https://github.com/nu11secur1ty/Compiling-the-Linux-Kernel-the-SUSE-way)
+
+
 # Search for kernel version (optional)
 
 Type the following apt-cache command :
