@@ -47,13 +47,9 @@ Which means
 
 # Cleanup /tmp
 
-`Warning: Cleanup /tmp directory may cause lost of unsaved data or application crashes. Be sure to save all your work and quit all applications.`
-
 ```diff
-+ this will be highlighted in green
-- this will be highlighted in red
+- Warning: Cleanup /tmp directory may cause lost of unsaved data or application crashes. Be sure to save all your work and - - quit all applications.
 ```
-
 
 
 
