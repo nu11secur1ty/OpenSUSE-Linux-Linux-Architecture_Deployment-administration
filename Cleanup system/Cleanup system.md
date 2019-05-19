@@ -49,7 +49,7 @@ Which means
 
 ```diff
 - Warning: Cleanup /tmp directory may cause lost of unsaved data or application crashes. 
-  Be sure to save all your work and quit all applications.
+- Be sure to save all your work and quit all applications.
 ```
 
 
