@@ -52,7 +52,15 @@ Which means
 - Be sure to save all your work and quit all applications.
 ```
 
+Usually application should delete temporary files when they quit or set a expiring date. However, not all applications do it correctly and many files will stay there forever.
 
+- Simple solution is:
+
+```bash
+sudo rm /tmp/* -rf
+```
+
+Operating system and applications will not be broken by removing these files. But you should keep in mind, some running application may have unsaved data stored here. For example, screenshot, office documents, files in downloading progress. Deleting files may interrupt the application and you will lose unsaved data. That's why you must quit all applications before running this command. 
 
 
 
