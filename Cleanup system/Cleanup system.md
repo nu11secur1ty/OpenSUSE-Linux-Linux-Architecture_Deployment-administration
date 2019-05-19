@@ -49,8 +49,10 @@ Which means
 
 `Warning: Cleanup /tmp directory may cause lost of unsaved data or application crashes. Be sure to save all your work and quit all applications.`
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-
+```diff
++ this will be highlighted in green
+- this will be highlighted in red
+```
 
 
 
