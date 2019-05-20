@@ -1,1 +1,5 @@
-These two lines delete everything in the two directories - directories, links, files, whatever. And the things get deleted regardless of being in use or not. Ask yourself if this is really what you want to do. It might be more sensible to delete just the files and only the ones which haven't been accessed for - say - 48 hours. Is this possible? Yes, it is: use the "find" command for that:
+`These two lines delete everything in the two directories - directories, links, files, whatever. And the things get deleted regardless of being in use or not. Ask yourself if this is really what you want to do. It might be more sensible to delete just the files and only the ones which haven't been accessed for - say - 48 hours. Is this possible? Yes, it is: use the "find" command for that:`
+
+```bash
+find /tmp -type f -atime +2 -exec rm -f {} \;
+```
