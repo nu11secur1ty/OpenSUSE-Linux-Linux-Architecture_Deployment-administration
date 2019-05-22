@@ -4,7 +4,7 @@
 - the command :~# find /tmp -type f -atime +2 -exec rm -f {} \;
 ```
 # Specific minutes
- - for this example, the file is not using from 59 min
+ - for this example, the file is not using from 37 min
 ```diff
-- the command :~# find /tmp -type f -mmin +59 -exec rm -fv {} \;
+- the command :~# find /tmp -type f -mmin +37 -exec rm -fv {} \;
 ```
