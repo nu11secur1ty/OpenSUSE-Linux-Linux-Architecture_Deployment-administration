@@ -6,5 +6,5 @@
 # Specific minutes
  - for this example the file is not using from 59 min
 ```diff
-find /tmp -type f -mmin +59 -exec rm -fv {} \;
+- the command :~# find /tmp -type f -mmin +59 -exec rm -fv {} \;
 ```
