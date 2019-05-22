@@ -19,3 +19,5 @@ Although you can mess around with setting up a virtual machine manually, it’s 
 Note: if you have a multicore machine, it would be a good idea to edit your VM settings to allow it to use more than one core. This will dramatically improve your compile times, so long as you substitute  make -jN for  make in all following commands, where N is the number of cores you give your VM access to.
 
 The first preparation step you should take is to install bc, a build-time dependency of Linux that isn’t included in the virtual machine. Unfortunately, this will require that you update the virtual machine first. Note that every command I give in this article should be run as root, which shouldn’t be hard, because the only user on your VM is, in fact, root.
+
+[Link:](https://www.osboxes.org/opensuse/#opensuse-42-3-leap-vmware)
