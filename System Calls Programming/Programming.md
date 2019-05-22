@@ -1,1 +1,9 @@
-...
+# What is a system call?
+
+Before we start implementing system calls, we’d better make sure we understand exactly what they are. A naive programmer—like me not that long ago—might define a system call as any function provided by the C library. But this isn’t quite true. Although many functions in the C library align nicely with system calls (like chdir), other ones do quite a bit more than simply ask the operating system to do something (such as fork or fprintf). Still others simply provide programming functionality without using the operating system, such as qsort and strtok.
+
+In fact, a system call has a very specific definition. It is a way of requesting that the operating system kernel do something on your behalf. Operations like tokenizing a string don’t require interacting with the kernel, but anything involving devices, files, or processes definitely does.
+
+System calls also behave differently under the hood than a normal function. Rather than simply jumping to some code from your program or a library, your program has to ask the CPU to switch into kernel mode, and then go to a predefined location within the kernel to handle your system call. This can be done in a few different ways, such as a processor interrupt, or special instructions such as syscall or sysenter. In fact, the modern way of making a system call in Linux is to let the kernel provide some code (called the VDSO) which does the right thing to make a system call. Here’s an interesting SO question on the topic.
+
+Thankfully, all that complexity is handled for us. No matter how a system call is made, it all comes down to looking up the particular system call number in a table to find the correct kernel function to call. Since all you need is a table entry and a function, it’s actually very easy to implement your own system call. So let’s give it a shot!
