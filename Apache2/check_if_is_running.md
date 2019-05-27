@@ -19,7 +19,7 @@ exit 0;
 ```
 # Crontab's
 
- - At every 5th minute.
+ - Checking at every 5th minute.
 ```bash 
 */5 * * * *    bash /path/to/ypur/script.sh
 ```
