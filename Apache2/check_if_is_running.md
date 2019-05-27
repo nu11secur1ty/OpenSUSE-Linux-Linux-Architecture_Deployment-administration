@@ -14,6 +14,7 @@ then
 else
   rcapache2 start
 fi
+  exit 0;
 ```
 # Crontab's
 
