@@ -1,3 +1,4 @@
+# Check if your apache is not running and start him if he is not.
 
 
 
