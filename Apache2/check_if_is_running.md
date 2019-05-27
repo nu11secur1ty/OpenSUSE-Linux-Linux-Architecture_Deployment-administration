@@ -4,6 +4,7 @@
 
 ```bash
 #!/bin/bash
+# by V.Varbanovski @nu11secur1ty
 # Here you can put your service
 service=httpd
 
@@ -13,4 +14,10 @@ then
 else
   rcapache2 start
 fi
+```
+# Crontab's
+
+ - At every 5th minute.
+```bash 
+*/5 * * * *    bash /path/to/ypur/script.sh
 ```
