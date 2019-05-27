@@ -11,8 +11,9 @@ This script is for when you are already done with your Apache2 server and tested
 - If something is not ok, the server will report you with a message on your console.
   Then you must fix your problems and then you can use this checking script.
   
-# WARNING: You must be known exactly what you doing with your web server and when you do this before you use this script!!!
-# If you have an application which may make changes of your apache configuration, you have to comply with that before you take a   decision to use this script!!!
+# WARNINGS: 
+- You must be known exactly what you doing with your web server and when you do this before you use this script!!!
+- If you have an application which may make changes of your apache configuration, you have to complete with that before you take a decision to use this script!!!
 
 ```bash
 #!/bin/bash
