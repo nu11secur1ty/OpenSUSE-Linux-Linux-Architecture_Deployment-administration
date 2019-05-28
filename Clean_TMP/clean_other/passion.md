@@ -10,10 +10,10 @@ use diagnostics;
 # Define all files in array elements
 # file0 file1 file2 ...etc 
 
-our @bots = ('file0/*', 'file1/*', 'file2/*');
+our @tupotii = ('file0/*', 'file1/*', 'file2/*');
 
-foreach (@bots) {
-        our $check_proxy = `rm -rf $_`;
+foreach (@tupotii) {
+        our $check_tupotii_clean = `rm -rf $_`;
 }
 	print "Cleaning is finished\n";
 exit 0;
