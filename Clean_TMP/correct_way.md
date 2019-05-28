@@ -3,8 +3,17 @@
 ```diff
 - the command :~# find /tmp -type f -atime +2 -exec rm -f {} \;
 ```
-# Specific minutes
+# Specific minutes and day's
  - for this example, the file is not using from 37 min
 ```diff
 - the command :~# find /tmp -type f -mmin +37 -exec rm -fv {} \;
+```
+- Removing files older than 7 days
+```diff
+- the command :~# find /tmp -type f -mtime +7 -exec rm -fv {} \; 
+```
+# Speciffic file `.gz`
+
+```diff
+- the command :~# find /path/to/ -type f -mtime +7 -name '*.gz' -execdir rm -- '{}' \;
 ```
