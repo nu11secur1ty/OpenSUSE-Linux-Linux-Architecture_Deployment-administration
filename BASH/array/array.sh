@@ -3,5 +3,6 @@
 array=( one two three )
 for i in "${array[@]}"
 do
+	# some command here...
 	echo $i
 done
