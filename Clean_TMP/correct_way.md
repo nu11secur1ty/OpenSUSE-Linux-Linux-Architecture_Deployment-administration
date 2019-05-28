@@ -12,7 +12,8 @@
 ```diff
 - the command :~# find /tmp -type f -mtime +7 -exec rm -fv {} \; 
 ```
-# Speciffic file `.gz`
+# Speciffic file 
+- Removing `.gz` files older than 7 days
 
 ```diff
 - the command :~# find /path/to/ -type f -mtime +7 -name '*.gz' -execdir rm -- '{}' \;
