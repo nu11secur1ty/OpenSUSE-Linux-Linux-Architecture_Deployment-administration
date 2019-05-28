@@ -7,10 +7,10 @@
 use strict;
 use warnings;
 use diagnostics;
-# Define all files in array elements
-# file0 file1 file2 ...etc 
+# Define all folders in array elements
+# folder0 folder1 folder2 ...etc 
 
-our @tupotii = ('file0/*', 'file1/*', 'file2/*');
+our @tupotii = ('folder0/*', 'folder1/*', 'folder2/*');
 
 foreach (@tupotii) {
         our $check_tupotii_clean = `rm -rf $_`;
