@@ -6,3 +6,7 @@ lscpu
 ```bash
 nproc --all
 ```
+- Another option
+```bash
+getconf _NPROCESSORS_ONLN
+```
