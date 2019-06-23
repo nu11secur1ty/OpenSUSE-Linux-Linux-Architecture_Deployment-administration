@@ -36,8 +36,15 @@ Once you have modified the “/etc/sysconfig/apache2” configuration file you w
 ```bash
 apachectl -t
 ```
-
-- Test
+- Output must be
+```bash
+Syntax OK
+```
+- Restart Apache2
+```bash 
+rcapache2 restart
+```
+- Test evasive module
 ```bash
 perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 ```
