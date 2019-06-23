@@ -64,7 +64,7 @@ rcapache2 restart
 ```bash
 perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 ```
-- Output should
+- Output should be
 ```html
 <p>You don't have permission to access / on this server.</p>
 <h1>Forbidden</h1>
