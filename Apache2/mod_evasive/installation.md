@@ -32,6 +32,11 @@ Once you have modified the “/etc/sysconfig/apache2” configuration file you w
     DOSBlockingPeriod   10
 </IfModule> 
 ```
+- Test Apache2 config
+```bash
+apachectl -t
+```
+
 - Test
 ```bash
 perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
