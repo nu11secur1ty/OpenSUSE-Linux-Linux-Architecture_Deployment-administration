@@ -29,7 +29,7 @@ a2enmod mod_evasivexx
 Once you have modified the “/etc/sysconfig/apache2” configuration file you will need to create a configuration file for the mod_evasive module. In the “/etc/apache2” directory you will need to create a file called: “mod_evasive.conf” with the following or similar content.
 
 ```bash 
-<IfModule mod_evasive20.c>
+<IfModule mod_evasive24.c>
     DOSHashTableSize    3097
     DOSPageCount        2
     DOSSiteCount        50
