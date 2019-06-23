@@ -106,7 +106,7 @@ HTTP/1.1 400 Bad Request
  HTTP/1.1 403 Forbidden
 ```
 - More: [Link](https://www.suse.com/c/protecting-apache-against-dos-attack-modevasive/)
-- Rapid7: [Link:](https://blog.rapid7.com/2017/04/09/how-to-configure-modevasive-with-apache-on-ubuntu-linux/?fbclid=IwAR1ru-5SePUZX4NUl1aGv1ZUTEaTd1T7Pqw_2qDWV_8IlfCJjYZI-LXr3kg)
+- Rapid7: [Link](https://blog.rapid7.com/2017/04/09/how-to-configure-modevasive-with-apache-on-ubuntu-linux/?fbclid=IwAR1ru-5SePUZX4NUl1aGv1ZUTEaTd1T7Pqw_2qDWV_8IlfCJjYZI-LXr3kg)
 
 
 
