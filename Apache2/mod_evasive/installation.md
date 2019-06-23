@@ -32,8 +32,112 @@ Once you have modified the “/etc/sysconfig/apache2” configuration file you w
     DOSBlockingPeriod   10
 </IfModule> 
 ```
-
-
+- Test
+```bash
+perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
+```
+- Output should
+```xml
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+HTTP/1.1 400 Bad Request
+```
+- or 
+```xml
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden 
+ HTTP/1.1 403 Forbidden
+```
 
 
 
