@@ -17,6 +17,7 @@ APACHE_MODULES="   (mod_evasive20)   actions alias auth_basic authn_file authz_h
 apachectl -M | grep evasive
 ```
 - in my case is the output is 
+
 `evasive24_module (shared)`
 
 - Enabling
