@@ -11,7 +11,7 @@ zypper install apache2-mod_evasive
 - Compiling Mod_evasive
 `Mod_evasive:`[Read](https://www.suse.com/c/protecting-apache-against-dos-attack-modevasive/?fbclid=IwAR3mt5DpmaPKhJy6owhI0gBkcJMIOr2j5abw3aC1mQ52H6KturCpIMvCFH8)
 
-- Direct download and configuring:[Link](https://github.com/nu11secur1ty/mod_evasive)
+- Direct download, installing and configuring:[Link](https://github.com/nu11secur1ty/mod_evasive)
 
 Once you have compiled the mod_evasive module you will need the module to load when Apache is started or restarted. The file that needs to be modified is “/etc/sysconfig/apache2” and the directive that needs to be altered is “APACHE_MODULES=” as it needs to include the mod_evasive24 module.
 ```bash
