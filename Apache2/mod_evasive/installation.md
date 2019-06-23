@@ -49,6 +49,25 @@ rcapache2 restart
 perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 ```
 - Output should
+```html
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+<h1>Forbidden</h1>
+<p>You don't have permission to access / on this server.</p>
+```
+- if you have an other securing methost "POST" "GET" "HTTP" "HTTPS" "REQUESTS" ;)
+
 ```xml
 HTTP/1.1 400 Bad Request
 HTTP/1.1 400 Bad Request
