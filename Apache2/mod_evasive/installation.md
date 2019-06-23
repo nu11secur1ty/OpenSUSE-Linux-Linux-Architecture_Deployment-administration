@@ -80,7 +80,7 @@ perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 <h1>Forbidden</h1>
 <p>You don't have permission to access / on this server.</p>
 ```
-- if you have an other securing methost "POST" "GET" "HTTP" "HTTPS" "REQUESTS" ;)
+- if you have another securing method "POST" "GET" "HTTP" "HTTPS" "REQUESTS" ;)
 
 ```xml
 HTTP/1.1 400 Bad Request
