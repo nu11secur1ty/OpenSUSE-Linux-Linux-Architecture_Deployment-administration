@@ -23,7 +23,10 @@ apachectl -M | grep evasive
 - Enabling
 
 ```bash
-a2enmod mod_evasivexx
+a2enmod evasive24_module
+```
+ - or
+```bash
 a2enmod mod_evasive24
 ```
 # Mod_evasive configuration
