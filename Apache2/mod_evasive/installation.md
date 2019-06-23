@@ -6,7 +6,7 @@ zypper addrepo https://download.opensuse.org/repositories/Apache:Modules/openSUS
 zypper refresh
 zypper install apache2-mod_evasive
 ```
-# Enabling manual
+# Manual installation
 
 - Compiling Mod_evasive
 `Mod_evasive:`[Read](https://www.suse.com/c/protecting-apache-against-dos-attack-modevasive/?fbclid=IwAR3mt5DpmaPKhJy6owhI0gBkcJMIOr2j5abw3aC1mQ52H6KturCpIMvCFH8)
