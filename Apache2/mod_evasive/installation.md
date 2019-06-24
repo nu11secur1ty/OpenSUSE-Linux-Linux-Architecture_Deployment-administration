@@ -126,7 +126,7 @@ tail -f /var/log/apache2/error_log
 
 # Uninstall 
 ```bash
-zypper install apache2-mod_evasive
+zypper remove apache2-mod_evasive
 mv /etc/apache2/mod_evasive.conf /etc/apache2/mod_evasive.conf.back
 a2dismod evasive24_module
 ```
