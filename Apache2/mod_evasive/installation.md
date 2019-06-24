@@ -49,6 +49,33 @@ Once you have modified the “/etc/sysconfig/apache2” configuration file you w
     DOSBlockingPeriod   10
 </IfModule> 
 ```
+- Manually restrict from nu11secur1ty
+```baqs
+<IfModule mod_evasive24.c>
+   DOSHashTableSize 2048
+   DOSPageCount 25  # maximum number of requests for the same page
+   DOSSiteCount 300  # total number of requests for any object by the same client IP on the same listener
+   DOSPageInterval 1.0 # interval for the page count threshold
+   DOSSiteInterval 1.0  # interval for the site count threshold
+   DOSBlockingPeriod 10.0 # time that a client IP will be blocked for
+   DOSLogDir “/var/log/apache2/evasive”
+   DOSEmailNotify admin@domain.com
+<IfModule>
+```
+- From Rapid7
+```bash
+ <IfModule mod_evasive24.c> 
+     DOSHashTableSize 3097 
+     DOSPageCount 2 
+     DOSSiteCount 50 
+     DOSPageInterval 1 
+     DOSSiteInterval 1 
+     DOSBlockingPeriod 10 
+     DOSEmailNotify email@yourdomain.com 
+     DOSSystemCommand "su - someuser -c '/sbin/... %s ...'" 
+     DOSLogDir "/var/log/mod_evasive" 
+ </IfModule>
+ ```
 - Test Apache2 config
 ```bash
 apachectl -t
