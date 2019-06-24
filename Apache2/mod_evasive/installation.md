@@ -129,7 +129,21 @@ for(0..100) {
 ```bash
 perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 ```
-
+***Test in Real time***
+- Output
+```xml
+[Mon Jun 24 15:57:05.759656 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.762618 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.763579 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.764434 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.765246 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.766167 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.767654 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.768792 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.769580 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.770392 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+[Mon Jun 24 15:57:05.771195 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
+```
 
 ------------------------------------------------------------------------------------------
 
