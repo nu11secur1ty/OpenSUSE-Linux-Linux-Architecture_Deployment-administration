@@ -42,7 +42,8 @@ Once you have modified the “/etc/sysconfig/apache2” configuration file you w
 <IfModule mod_evasive24.c>
     DOSHashTableSize    3097
     DOSPageCount        2
-    DOSSiteCount        50
+    #DOSSiteCount        50
+    DOSSiteCount        200
     DOSPageInterval     1
     DOSSiteInterval     1
     DOSBlockingPeriod   10
