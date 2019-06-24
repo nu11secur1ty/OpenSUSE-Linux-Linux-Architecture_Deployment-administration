@@ -130,6 +130,11 @@ zypper remove apache2-mod_evasive
 mv /etc/apache2/mod_evasive.conf /etc/apache2/mod_evasive.conf.back
 a2dismod evasive24_module
 ```
+- to be sure
+```bash
+cd /etc/apache2/
+rm mod_evasive.conf
+```
 - Restart Apache2
 ```bash
 rcapache2 restart
