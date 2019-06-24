@@ -151,7 +151,7 @@ perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 
 
 
-# Manual installation
+# Manual installation for OLD Linux Distros
 
 - Compiling Mod_evasive
 `Mod_evasive:`[Read](https://www.suse.com/c/protecting-apache-against-dos-attack-modevasive/?fbclid=IwAR3mt5DpmaPKhJy6owhI0gBkcJMIOr2j5abw3aC1mQ52H6KturCpIMvCFH8)
