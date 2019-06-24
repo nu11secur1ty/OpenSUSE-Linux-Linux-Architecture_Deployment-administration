@@ -124,5 +124,13 @@ tail -f /var/log/apache2/error_log
 - More: [Link](https://www.suse.com/c/protecting-apache-against-dos-attack-modevasive/)
 - Rapid7: [Link](https://blog.rapid7.com/2017/04/09/how-to-configure-modevasive-with-apache-on-ubuntu-linux/?fbclid=IwAR1ru-5SePUZX4NUl1aGv1ZUTEaTd1T7Pqw_2qDWV_8IlfCJjYZI-LXr3kg)
 
-
-
+# Uninstall 
+```bash
+zypper install apache2-mod_evasive
+mv /etc/apache2/mod_evasive.conf /etc/apache2/mod_evasive.conf.back
+a2dismod evasive24_module
+```
+- Restart Apache2
+```bash
+rcapache2 restart
+```
