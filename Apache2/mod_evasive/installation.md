@@ -129,7 +129,7 @@ for(0..100) {
 ```bash
 perl /usr/share/doc/packages/apache2-mod_evasive/test.pl
 ```
-***Test in Real time***
+***Test in Real time***`with 10000`requests using DDoS bot
 - Output
 ```xml
 [Mon Jun 24 15:57:05.759656 2019] [:error] [pid 6054] [client 192.168.1.14:54792] client denied by server configuration: /srv/www/htdocs/
