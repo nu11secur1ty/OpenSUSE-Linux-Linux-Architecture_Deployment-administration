@@ -1,25 +1,34 @@
-# Installing php5 & php7 thogeder on OpenSuse.
+# Installing php5 & php7 thogeder on OpenSuse 42.3.
 - Install php5
 --------------------------------------------------
 ```bash
-zypper in php5
+zypper in php5 php5-mysql apache2-mod_php5
 ```
 
-- Installin php7
+- Installin php7 dependency packages
 --------------------------------------------------
 ```bash
-zypper install libjpeg-devel
-zypper install libxml2-devel
-bash
+zypper in libjpeg-devel
+zypper in libxml2-devel
+zypper in sqlite3
+zypper in bison3 # If you need you must compiling the bison 3
+```
+**NOTE:** *Check for dependencies*
 
-# Curl
+# Installing Curl 
 ```bash
 wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
+Check for dependencies...
 ```
 -----------------------------------------------------
 
 - Building
+
 ```bash
+cd /usr/src/
+wget https://www.php.net/distributions/php-7.3.6.tar.gz
+tar -xvf php-7.3.6.tar.gz
+cd php-7.3.6/
 ./configure
 make
 make test # if you want to test php7 before installing 
