@@ -18,6 +18,10 @@ This script is for when you are already done with your Apache2 server and tested
 ```bash
 #!/bin/bash
 # by V.Varbanovski @nu11secur1ty
+
+# The script needs to know, what dirs Apache2 is using
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
 # Here you can put your service
 service=httpd
 
