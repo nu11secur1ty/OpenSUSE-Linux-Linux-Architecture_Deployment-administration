@@ -1,10 +1,11 @@
 # Installing php5 & php7 thogeder on OpenSuse.
 - Install php5
+--------------------------------------------------
 ```bash
 zypper in php5
 ```
 - Installin php7
-
+--------------------------------------------------
 ```bash
 zypper install libjpeg-devel
 zypper install libxml2-devel
