@@ -1,6 +1,6 @@
 ### SLES 12
 
-
+```bash
 blkid /dev/sr0                         -  check for UUID
 
 mkdir /mnt/cdrom
@@ -14,12 +14,13 @@ cd /mnt/cdrom/
 cp -pr * /root/Repo_SLES_12_SP_2
 
 watch -n1 du -sh 
-
+```
 
 
 ##############################################################
 # Install Apache
 
+```bash
 zypper in apache2
 
 rcapache2 start
@@ -27,7 +28,7 @@ rcapache2 start
 systemctl enable apache2
 
 chkconfig apache2 on
-
+```
 
 # Repository
 # Add PHP5:
