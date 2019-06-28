@@ -1,4 +1,3 @@
-### $ Publix repo ###
 ### SLES 12
 
 
