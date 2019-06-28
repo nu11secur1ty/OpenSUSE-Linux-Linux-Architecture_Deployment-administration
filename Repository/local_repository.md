@@ -1,11 +1,11 @@
 ### SLES 12
 
 ```bash
-blkid /dev/sr0                         -  check for UUID
+blkid /dev/sr0                         # check for UUID
 
 mkdir /mnt/cdrom
 
-mount -t iso9660 /dev/sr0 /mnt/cdrom   - mount your dvd in to a /mnt/cdrom 
+mount -t iso9660 /dev/sr0 /mnt/cdrom   # mount your dvd in to a /mnt/cdrom 
 
 mkdir /root/Repo_SLES_12_SP_2
 
