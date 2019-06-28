@@ -1,4 +1,4 @@
-### SLES 12
+### SLES 11, 12, .x.x.x
 
 ```bash
 blkid /dev/sr0                         # check for UUID
