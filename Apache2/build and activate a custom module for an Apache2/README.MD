@@ -9,3 +9,13 @@ According to these premises, I going to start introducing some specific details 
 Just after this introduction, you will find a sort of “getting started” guide to be used to create your really first httpd module.
 
 This very short guide will finish by exploring a simplified module that has been used in a real project to provide specific information to a JEE application deployed on Apache Tomcat 8 but proxied via mod_jk 1.2.
+
+# Prerequisites
+
+   - basic knowledge of C programming language
+   - basic understanding of how modules are loaded and configured in the Apache HTTP Server
+
+- Apache Server request handling overview
+
+Request processing  in Apache HTTP Server 2.4 can be well described by the following image 
+![]()
