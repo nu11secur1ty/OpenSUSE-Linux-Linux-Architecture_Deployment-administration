@@ -169,5 +169,42 @@ module AP_MODULE_DECLARE_DATA header2env_module = {
 };
 ```
 
+- Compiling and activate
+```bash
+cd /root/my_apache2_module
+apxs -i -a -c mod_my_apache2_module.c 
+```
+- Output should be
+```xml
+/usr/lib64/apr-1/build/libtool --silent --mode=compile gcc -prefer-pic -fmessage-length=0 -grecord-gcc-switches -O2 -Wall -D_FORTIFY_SOURCE=2 -fstack-protector-strong -funwind-tables -fasynchronous-unwind-tables -fstack-clash-protection -g -fPIC -Wall -DLDAP_DEPRECATED  -DLINUX -D_REENTRANT -D_GNU_SOURCE -pthread -I/usr/include/apache2  -I/usr/include/apr-1   -I/usr/include/apr-1 -I/usr/include  -c -o mod_my_apache2_module.lo mod_my_apache2_module.c && touch mod_my_apache2_module.slo
+/usr/lib64/apr-1/build/libtool --silent --mode=link gcc    -o mod_my_apache2_module.la  -rpath /usr/lib64/apache2 -module -avoid-version    mod_my_apache2_module.lo
+/usr/share/apache2/build/instdso.sh SH_LIBTOOL='/usr/lib64/apr-1/build/libtool' mod_my_apache2_module.la /usr/lib64/apache2
+/usr/lib64/apr-1/build/libtool --mode=install install mod_my_apache2_module.la /usr/lib64/apache2/
+libtool: install: install .libs/mod_my_apache2_module.so /usr/lib64/apache2/mod_my_apache2_module.so
+libtool: install: install .libs/mod_my_apache2_module.lai /usr/lib64/apache2/mod_my_apache2_module.la
+libtool: finish: PATH="/sbin:/usr/sbin:/usr/local/sbin:/root/bin:/usr/local/bin:/usr/bin:/bin:/sbin" ldconfig -n /usr/lib64/apache2
+----------------------------------------------------------------------
+Libraries have been installed in:
+   /usr/lib64/apache2
+
+If you ever happen to want to link against installed libraries
+in a given directory, LIBDIR, you must either use libtool, and
+specify the full pathname of the library, or use the '-LLIBDIR'
+flag during linking and do at least one of the following:
+   - add LIBDIR to the 'LD_LIBRARY_PATH' environment variable
+     during execution
+   - add LIBDIR to the 'LD_RUN_PATH' environment variable
+     during linking
+   - use the '-Wl,-rpath -Wl,LIBDIR' linker flag
+   - have your system administrator add LIBDIR to '/etc/ld.so.conf'
+
+See any operating system documentation about shared libraries for
+more information, such as the ld(1) and ld.so(8) manual pages.
+----------------------------------------------------------------------
+chmod 755 /usr/lib64/apache2/mod_my_apache2_module.so
+activating my_apache2_module
+```
+
+
 
 
