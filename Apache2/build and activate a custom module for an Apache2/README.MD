@@ -1,4 +1,4 @@
-# build and activate a custom module for an Apache2
+# Build and activate a custom module for an Apache2
 - Introduction
 
 This post describes how to create, build and activate a custom module for an Apache2 HTTP Server deployed on Linux.
