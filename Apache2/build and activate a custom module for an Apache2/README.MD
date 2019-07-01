@@ -18,4 +18,4 @@ This very short guide will finish by exploring a simplified module that has been
 - Apache Server request handling overview
 
 Request processing  in Apache HTTP Server 2.4 can be well described by the following image 
-![]()
+![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Apache2/build%20and%20activate%20a%20custom%20module%20for%20an%20Apache2/image/filter_arch.png)
