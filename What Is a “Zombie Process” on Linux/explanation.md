@@ -13,3 +13,5 @@ When a process dies on Linux, it isn’t all removed from memory immediately —
 This normally happens very quickly, so you won’t see zombie processes accumulating on your system. However, if a parent process isn’t programmed properly and never calls wait(), its zombie children will stick around in memory until they’re cleaned up.
 
 Utilities like GNOME System Monitor, the top command, and the ps command display zombie processes.
+
+[](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/What%20Is%20a%20%E2%80%9CZombie%20Process%E2%80%9D%20on%20Linux/shot/1.png)
