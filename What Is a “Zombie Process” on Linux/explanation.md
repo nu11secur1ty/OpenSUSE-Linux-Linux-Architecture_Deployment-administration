@@ -22,3 +22,21 @@ Zombie processes don’t use up any system resources. (Actually, each one uses a
 
 However, a few zombie processes hanging around are no problem – although they do indicate a bug with their parent process on your system.
 
+![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/What%20Is%20a%20%E2%80%9CZombie%20Process%E2%80%9D%20on%20Linux/shot/2.png)
+
+
+- Getting Rid of Zombie Processes
+
+You can’t kill zombie processes as you can kill normal processes with the SIGKILL signal — zombie processes are already dead. Bear in mind that you don’t need to get rid of zombie processes unless you have a large amount on your system – a few zombies are harmless. However, there are a few ways you can get rid of zombie processes.
+
+One way is by sending the SIGCHLD signal to the parent process. This signal tells the parent process to execute the wait() system call and clean up its zombie children. Send the signal with the kill command, replacing pid in the command below with the parent process’s PID:
+
+
+```bash
+kill -s SIGCHLD pid
+```
+
+
+However, if the parent process isn’t programmed properly and is ignoring SIGCHLD signals, this won’t help. You’ll have to kill or close the zombies’ parent process. When the process that created the zombies ends, init inherits the zombie processes and becomes their new parent. (init is the first process started on Linux at boot and is assigned PID 1.) init periodically executes the wait() system call to clean up its zombie children, so init will make short work of the zombies. You can restart the parent process after closing it.
+
+If a parent process continues to create zombies, it should be fixed so that it properly calls wait() to reap its zombie children. File a bug report if a program on your system keeps creating zombies.
