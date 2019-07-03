@@ -15,3 +15,10 @@ This normally happens very quickly, so you won’t see zombie processes accumula
 Utilities like GNOME System Monitor, the top command, and the ps command display zombie processes.
 
 ![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/What%20Is%20a%20%E2%80%9CZombie%20Process%E2%80%9D%20on%20Linux/shot/1.png)
+
+- Dangers of Zombie Processes
+
+Zombie processes don’t use up any system resources. (Actually, each one uses a very tiny amount of system memory to store its process descriptor.) However, each zombie process retains its process ID (PID). Linux systems have a finite number of process IDs – 32767 by default on 32-bit systems. If zombies are accumulating at a very quick rate – for example, if improperly programmed server software is creating zombie processes under load — the entire pool of available PIDs will eventually become assigned to zombie processes, preventing other processes from launching.
+
+However, a few zombie processes hanging around are no problem – although they do indicate a bug with their parent process on your system.
+
