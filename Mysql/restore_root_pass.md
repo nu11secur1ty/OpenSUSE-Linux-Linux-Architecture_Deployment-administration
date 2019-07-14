@@ -1,3 +1,5 @@
+# Reset a MySQL root password
+-------------------------------------------
 # Stop the MySQL service
 
 - (Ubuntu and Debian) Run the following command:
