@@ -93,14 +93,14 @@ mysqld --user=mysql --init-file=/home/user/init-file.txt --console
 Make sure to stop the server and start it normally after that.
 
 ```bash
-# systemctl stop mysqld.service        # for distros using systemd 
-# systemctl restart mysqld.service     # for distros using systemd 
-# rcmysql stop                         # Suse
+systemctl stop mysqld.service        # for distros using systemd 
+systemctl restart mysqld.service     # for distros using systemd 
+rcmysql stop                         # Suse
 
-# /etc/init.d/mysqld stop              # for distros using init
-# /etc/init.d/mysqld restart           # for distros using init
-# rcmysql restart                        # Suse
-# rmysql start                           # Suse 
+/etc/init.d/mysqld stop              # for distros using init
+/etc/init.d/mysqld restart           # for distros using init
+rcmysql restart                      # Suse
+rmysql start                         # Suse 
 ```
 - You should now be able to connect to the MySQL server as root using the new password.
 
@@ -112,9 +112,9 @@ mysql -u root -p
 - First make sure that the MySQL service is stopped.
 
 ```bash
-# systemctl stop mysqld.service     # for distros using systemd 
-# /etc/init.d/mysqld stop           # for distros using init
-# rcmysql stop                      # Suse
+ systemctl stop mysqld.service     # for distros using systemd 
+ /etc/init.d/mysqld stop           # for distros using init
+ rcmysql stop                      # Suse
 ```
 - Then start the service with the following option.
 ```bash
@@ -136,13 +136,13 @@ ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_passowrd';
 ```
 - Now stop the MySQL server and start it normally.
 ```bash
-# systemctl stop mysqld.service        # for distros using systemd 
-# systemctl restart mysqld.service     # for distros using systemd 
-# rcmysql stop                         # Suse 
-# rcmysql restart                      # Suse
+ systemctl stop mysqld.service        # for distros using systemd 
+ systemctl restart mysqld.service     # for distros using systemd 
+ rcmysql stop                         # Suse 
+ rcmysql restart                      # Suse
 
-# /etc/init.d/mysqld stop              # for distros using init
-# /etc/init.d/mysqld restart           # for distros using init
+ /etc/init.d/mysqld stop              # for distros using init
+ /etc/init.d/mysqld restart           # for distros using init
 ```
 - You should be able to connect with your new password.
 ```bash
