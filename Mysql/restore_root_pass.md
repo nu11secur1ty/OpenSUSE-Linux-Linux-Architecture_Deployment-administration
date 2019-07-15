@@ -1,4 +1,4 @@
-# Reset a MySQL root password
+# Reset a MySQL Ver 15.1 Distrib 10.0.35-MariaDB root password
 -------------------------------------------
 # Stop the MySQL service
 
