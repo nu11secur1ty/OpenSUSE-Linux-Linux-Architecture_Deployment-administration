@@ -64,6 +64,7 @@ mysql -u root -p
 - Enter your new password when prompted.
 
 ------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------
 
 # Reset Root Password in MySQL 8.0
 
@@ -101,6 +102,53 @@ Make sure to stop the server and start it normally after that.
 rcmysql restart                        # Suse
 rmysql start                           # Suse 
 ```
+- You should now be able to connect to the MySQL server as root using the new password.
+
+```bash
+mysql -u root -p
+```
+# Reset MySQL Root Password Using –skip-grant-tables
+
+- First make sure that the MySQL service is stopped.
+
+```bash
+# systemctl stop mysqld.service     # for distros using systemd 
+# /etc/init.d/mysqld stop           # for distros using init
+# rcmysql stop                      # Suse
+```
+- Then start the service with the following option.
+```bash
+mysqld --skip-grant-tables --user=mysql &
+```
+- Then, you can connect to the mysql server by simply running.
+```bash
+mysql
+```
+- Since account-management is disabled when the service is started with `--skip-grant-tables` option, we will have to reload the grants. That way we will be able to change the password later:
+
+```bash
+ FLUSH PRIVILEGES;
+```
+- Now you can run the following query to update the password. Make sure to change “new_password” with the actual password you wish to use.
+
+```bash
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'new_passowrd';
+```
+- Now stop the MySQL server and start it normally.
+```bash
+# systemctl stop mysqld.service        # for distros using systemd 
+# systemctl restart mysqld.service     # for distros using systemd 
+# rcmysql stop                         # Suse 
+# rcmysql restart                      # Suse
+
+# /etc/init.d/mysqld stop              # for distros using init
+# /etc/init.d/mysqld restart           # for distros using init
+```
+- You should be able to connect with your new password.
+```bash
+ mysql -u root -p
+```
+
 
 # Enjoy
 
