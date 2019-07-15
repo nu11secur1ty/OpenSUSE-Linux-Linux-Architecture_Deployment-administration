@@ -99,8 +99,8 @@ Make sure to stop the server and start it normally after that.
 
 # /etc/init.d/mysqld stop              # for distros using init
 # /etc/init.d/mysqld restart           # for distros using init
-rcmysql restart                        # Suse
-rmysql start                           # Suse 
+# rcmysql restart                        # Suse
+# rmysql start                           # Suse 
 ```
 - You should now be able to connect to the MySQL server as root using the new password.
 
