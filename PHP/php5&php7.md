@@ -55,6 +55,13 @@ linuxprog@linuxprog:~>
 linuxprog@linuxprog:~> whereis php
 php: /usr/bin/php /usr/local/bin/php /usr/local/php /usr/share/man/man1/php.1.gz /usr/src/php-7.3.6/php7.spec /usr/src/php-7.3.6/php.ini-development /usr/src/php-7.3.6/php.ini-production /usr/src/php-7.3.6/php.gif
 ```
+# Create soft link
+```bash
+whereis phph
+cd /go/to/path
+ln -s phpx phpy
+```
+
 **NOTE:** *You can make a soft of* ***php7 - php-cgi*** *link if you want and if you know what actually happens :)*
 
 
