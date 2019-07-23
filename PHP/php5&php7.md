@@ -19,7 +19,9 @@ zypper in gcc
 # Installing Curl 
 ```bash
 wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
-Check for dependencies...
+./configure # If you need
+make
+make install
 ```
 -----------------------------------------------------
 
