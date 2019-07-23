@@ -39,6 +39,12 @@ download gmp.h
 rpm -q gmp gmp-devel
 zypper in gmp-devel
 ```
+- Building
+```bash
+./configure --with-gmp --with-curl --enable-mbstring
+make
+make install
+```
 
 # Building
 ```bash
