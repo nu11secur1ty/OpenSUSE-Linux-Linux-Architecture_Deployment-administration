@@ -6,7 +6,7 @@ mbstring
 openssl 
 ```
 
-# Check for your existing modules
+# Checking for your existing modules
 ```bash
 php -m
 php-cgi -m
