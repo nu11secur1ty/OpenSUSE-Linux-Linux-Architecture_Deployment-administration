@@ -21,6 +21,10 @@ cd /usr/src/your_php_env/
 ```bash
 ./configure --enable-your_module
 ```
+- Example:
+```bash
+./configure --enable-mbstring --with-curl --with-openssl --with-gmp
+```
 
 # Building
 ```bash
