@@ -23,7 +23,7 @@ cd /usr/src/your_php_env/
 ```
 - Example:
 ```bash
-./configure --enable-mbstring --with-curl --with-openssl --with-gmp
+./configure --enable-mbstring --with-curl 
 ```
 
 # Building
