@@ -25,6 +25,11 @@ cd /usr/src/your_php_env/
 ```bash
 ./configure --enable-mbstring --with-curl 
 ```
+-------------------------------------------------------------
+# For gmp
+```bash
+download gmp.h
+ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h 
 
 # Building
 ```bash
