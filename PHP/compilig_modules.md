@@ -6,6 +6,12 @@ mbstring
 openssl 
 ```
 
+# Check for your existing modules
+```bash
+php -m
+php-cgi -m
+```
+
 # Compilig a modules
 ```bash
 cd /usr/src/your_php_env/
