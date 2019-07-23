@@ -15,5 +15,3 @@
  rcmysql start
  systemctl start mysql
  systemctl enable mysql
- 
- 
