@@ -13,6 +13,7 @@ zypper in libxml2-devel
 zypper in sqlite3
 zypper in bison3 # If you need you must compiling the bison 3
 zypper in gcc
+zypper in gmp-devel
 ```
 **NOTE:** *Check for dependencies*
 
