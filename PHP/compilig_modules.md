@@ -17,6 +17,11 @@ php-cgi -m
 cd /usr/src/your_php_env/
 ./configure --with-your_module
 ```
+- or
+```bash
+./configure --enable-your_module
+```
+
 # Building
 ```bash
 make
