@@ -1,3 +1,11 @@
+# Example modules:
+```xml
+curl 
+gmp 
+mbstring
+openssl 
+```
+
 # Compilig a modules
 ```bash
 cd /usr/src/your_php_env/
