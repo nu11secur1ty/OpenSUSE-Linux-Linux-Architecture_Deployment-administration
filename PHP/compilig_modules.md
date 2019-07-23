@@ -29,10 +29,14 @@ cd /usr/src/your_php_env/
 # For gmp
 ```bash
 download gmp.h
-ln -s /usr/include/x86_64-linux-gnu/gmp.h /usr/include/gmp.h 
-
+```
+puth the file in:
+```bash
+/usr/include/gmp.h 
+```
 # Building
 ```bash
+./configure
 make
 make test
 make install
