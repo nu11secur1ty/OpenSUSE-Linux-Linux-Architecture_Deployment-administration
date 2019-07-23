@@ -7,3 +7,8 @@
 157  2019-07-23 21:05:01 zypper in gmp
 158  2019-07-23 21:05:12 zypper in gmp-devel
 ```
+- !!
+```bash
+  158  2019-07-23 21:05:12 zypper in gmp-devel
+  159  2019-07-23 21:05:27 ./configure --with-curl --enable-mbstring --with-gmp
+```
