@@ -30,10 +30,16 @@ cd /usr/src/your_php_env/
 ```bash
 download gmp.h
 ```
-puth the file in:
+- puth the file in:
 ```bash
 /usr/include/gmp.h 
 ```
+- packages:
+```bash
+rpm -q gmp gmp-devel
+zypper in gmp-devel
+```
+
 # Building
 ```bash
 ./configure
