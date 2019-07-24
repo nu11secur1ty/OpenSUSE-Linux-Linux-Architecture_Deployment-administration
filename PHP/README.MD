@@ -1,0 +1,1 @@
+# PHP tricks and hacks
