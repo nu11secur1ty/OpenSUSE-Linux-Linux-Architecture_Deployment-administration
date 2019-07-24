@@ -20,6 +20,7 @@ zypper in gmp-devel
 
 # Installing Curl 
 ```bash
+cd /usr/src/
 wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
 ./configure # If you need
 make
