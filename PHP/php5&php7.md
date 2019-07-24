@@ -39,7 +39,7 @@ wget https://www.php.net/distributions/php-7.3.6.tar.gz
 tar -xvf php-7.3.6.tar.gz
 cd php-7.3.6/
 ./configure
-./configure --enable-mbstring --with-curl --with-gmp   # In my case
+./configure --enable-mbstring --with-curl --with-gmp --with-openssl  #In my case
 make
 make test # if you want to test php7 before installing 
 make install
