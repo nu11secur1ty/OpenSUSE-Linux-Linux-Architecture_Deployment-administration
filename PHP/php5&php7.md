@@ -15,6 +15,7 @@ zypper in bison3 # If you need you must compiling the bison 3
 zypper in bison
 zypper in gcc
 zypper in gmp-devel
+zypper in make
 ```
 **NOTE:** *Check for dependencies*
 
