@@ -22,6 +22,7 @@ zypper in gmp-devel
 ```bash
 cd /usr/src/
 wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
+tar xvf curl-7.37.1.tar.bz2
 ./configure # If you need
 make
 make install
