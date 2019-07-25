@@ -13,6 +13,20 @@ php -m
 php-cgi -m
 ```
 
+
+# Installin php7 dependency packages
+```bash
+zypper in libjpeg-devel
+zypper in libxml2-devel
+zypper in sqlite3
+zypper in bison3 # If you need you must compiling the bison 3
+zypper in bison
+zypper in gcc
+zypper in gmp-devel
+zypper in openssl-devel
+zypper in make
+```
+
 # Compilig a modules
 ```bash
 cd /usr/src/your_php_env/
