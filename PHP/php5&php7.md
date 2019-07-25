@@ -67,7 +67,7 @@ php: /usr/bin/php /usr/local/bin/php /usr/local/php /usr/share/man/man1/php.1.gz
 ```
 # Create soft link
 ```bash
-whereis phph
+whereis php
 cd /go/to/path
 ln -s phpx phpy
 ```
