@@ -1,9 +1,10 @@
 # Example modules:
 ```xml
 curl 
-gmp 
-mbstring
-openssl 
+gmp  
+mbstring  
+openssl  
+mysql  
 ```
 
 # Checking for your existing modules
