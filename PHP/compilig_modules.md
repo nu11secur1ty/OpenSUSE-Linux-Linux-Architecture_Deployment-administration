@@ -27,7 +27,21 @@ zypper in openssl-devel
 zypper in make
 ```
 
-# Compilig a modules
+
+# Building
+```bash
+cd /usr/src/
+wget https://www.php.net/distributions/php-7.3.6.tar.gz
+tar -xvf php-7.3.6.tar.gz
+cd php-7.3.6/
+./configure
+./configure --enable-mbstring --with-curl --with-gmp --with-openssl --with-mysqli #In my case
+make
+make test # if you want to test php7 before installing 
+make install
+```
+# Compiling a single module
+
 ```bash
 cd /usr/src/your_php_env/
 ./configure --with-your_module
