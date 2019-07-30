@@ -71,20 +71,20 @@ If you prefer to use phpMyAdmin, you would need to select the table:
 
 Congratulations! You have now changed the storage engine of the table!
 
-More Technical Explanation
+# More Technical Explanation
 
 Here is a little bit of more detailed information about the storage engines, to help explain why different ones are better for different purposes.
 Similarities
 
     Any database table, regardless of which storage engine it uses, will have a .frm file. This file's name will be the table name followed by this file extension. This file contains table metadata, such as the table definition. Depending on the table's engine5) there may or may not be other files associated with the table.
 
-MyISAM
+# MyISAM
 
     A MyISAM table has a total of three files. In addition to the .frm file that all tables have, there is also a .MYD file containing the table data, and a .MYI file containing the indexes.
     Because MyISAM stores all table information directly within that table's three files, a single crashed table will not directly interfere with the functionality of other tables.
     Because MyISAM stores all table information directly within that table's three files, it is possible if needed to restore a single database from a Partial VPS Restore, if all tables in that database are using MyISAM.
 
-InnoDB
+# InnoDB
 
     An InnoDB table will have one or two files, depending on if innodb_file_per_table is enabled.
         Whether it is enabled or not, the table will still have an .frm file, containing the table definition, as all tables do.
@@ -94,7 +94,7 @@ InnoDB
     InnoDB has an automatic crash recovery process. When mysql stops unexpectedly, InnoDB has certain checks that run at mysql startup. In most cases, this crash recovery process will successfully finalize changes committed before the crash and undo changes that were in progress but not committed. However, sometimes this process fails, especially if InnoDB is being particularly active at a time when MySQL is shutdown particularly uncleanly. When this happens, MySQL will be completely unable to start, and no databases will be accessible. For this reason, it is strongly recommended that if a site needs enough table write concurrency to justify using InnoDB, that that site be on its own server, to help prevent it from contributing to other sites being down.
     Additionally, if InnoDB crashes and is unable to recover automatically, it is possible for some of the InnoDB tables to be corrupted in a non-repairable way. This is another reason it is particularly important to have automatic backups enabled for any account using InnoDB tables.
 
-MEMORY
+# MEMORY
 
     A MEMORY table will only have one file: the .frm file itself, containing the table definition. The table data is stored only in memory.
     If mysql is restarted, data in a MEMORY table is lost. This might not be a problem if it is ephemeral data that is not needed for very long.
@@ -103,7 +103,7 @@ MEMORY
     Because data from MEMORY tables is lost when mysql is restarted, corrupted MEMORY table data cannot prevent mysql from starting.
     MEMORY tables should only be used for ephemeral, non-persistant data, that is only needed for short periods of time.
 
-Summary
+# Summary
 
 If a table is composed entirely of ephemeral data that does not need to be kept long, it may be better to store it in MEMORY tables, to combine speed with compartmentalization.
 
