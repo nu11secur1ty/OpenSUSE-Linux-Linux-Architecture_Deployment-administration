@@ -54,5 +54,11 @@ If you already have a table created that needs to be changed to a different engi
 mysql> ALTER TABLE dbname.tablename ENGINE = enginename;
 ```
 If you prefer to use phpMyAdmin, you would need to select the table: 
+
+![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Mysql/InnoDB%20and%20MyISAM/screen/1.png)
+
+- click the "Operations" tab: 
+
 ![]()
+
 
