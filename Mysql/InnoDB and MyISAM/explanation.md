@@ -26,24 +26,26 @@ When you will execute the above command, complete process will be as such – th
 # What is the difference between MyISAM and InnoDB?
 
 When you create a table in MySQL,1) you can choose a storage engine. The storage engine is the way the table data is stored in files.2) There exist several different storage engines, but the most commonly used ones are MyISAM and InnoDB, each of which are the default storage engine in different MySQL versions. If you do not specify a storage engine when creating a table, the default engine for your MySQL version will be used. In MySQL versions earlier than 5.5.5, MyISAM was default, but in versions 5.5.5 and later, InnoDB is the default.3) In most cases, MyISAM is recommended, but there are some cases where for a particular table InnoDB might be recommended instead.
-General Comparison
+
+# General Comparison
 
 Here is a very brief overview of common types of situations where one of these two engines might be better to use than the other.
-When to use MyISAM instead of InnoDB
 
-    In general, if a MyISAM table has a problem, the problem will be limited to that table, rather than affecting the functionality of other tables or databases as can sometimes happen when an InnoDB table has a problem. For this reason, MyISAM is recommended whenever possible in servers with multiple sites.
+- When to use MyISAM instead of InnoDB
 
-When to use InnoDB instead of MyISAM
+In general, if a MyISAM table has a problem, the problem will be limited to that table, rather than affecting the functionality of other tables or databases as can sometimes happen when an InnoDB table has a problem. For this reason, MyISAM is recommended whenever possible in servers with multiple sites.
 
-    Because InnoDB makes more extensive use of row-level locks instead of table-level locks, using InnoDB for specific tables that get written to frequently can help reduce the amount of time waiting for locks. This can in turn substantially reduce memory usage in the server in these specific cases.
-    In part because databases using InnoDB tables cannot be individually restored as part of a Partial VPS Restore, and in part because some types of issues with InnoDB tables can cause data loss in other InnoDB tables, it is even more important than usual to make sure automatic backups are enabled and successfully being created, if any of the sites are using InnoDB.
-    In part because issues with InnoDB tables can affect access to other databases, if a site has need for enough concurrent table writes to justify using InnoDB, that site might be busy enough to start considering putting it on its own server. If the site is not yet big enough for its own server, it might be better instead to recode the site to require less concurrency of table writes.
+# When to use InnoDB instead of MyISAM
 
-When to use neither MyISAM nor InnoDB
+- Because InnoDB makes more extensive use of row-level locks instead of table-level locks, using InnoDB for specific tables that get written to frequently can help reduce the amount of time waiting for locks. This can in turn substantially reduce memory usage in the server in these specific cases.
+- In part because databases using InnoDB tables cannot be individually restored as part of a Partial VPS Restore, and in part because some types of issues with InnoDB tables can cause data loss in other InnoDB tables, it is even more important than usual to make sure automatic backups are enabled and successfully being created, if any of the sites are using InnoDB.
+- In part because issues with InnoDB tables can affect access to other databases, if a site has need for enough concurrent table writes to justify using InnoDB, that site might be busy enough to start considering putting it on its own server. If the site is not yet big enough for its own server, it might be better instead to recode the site to require less concurrency of table writes.
 
-    Most types of sites store session information as files, but if it must be stored in a database table, MEMORY is likely a better choice of engine than either MyISAM or InnoDB.
-    Similarly, though it is even more rare, certain kinds of site cache data if being stored in a database table should probably use the MEMORY storage engine.
+# When to use neither MyISAM nor InnoDB
 
-How to Change a Table's Storage Engine
+- Most types of sites store session information as files, but if it must be stored in a database table, MEMORY is likely a better choice of engine than either MyISAM or InnoDB.
+- Similarly, though it is even more rare, certain kinds of site cache data if being stored in a database table should probably use the MEMORY storage engine.
+
+# How to Change a Table's Storage Engine
 
 If you already have a table created that needs to be changed to a different engine, this can be done with an ALTER TABLE statement, like this:4) 
