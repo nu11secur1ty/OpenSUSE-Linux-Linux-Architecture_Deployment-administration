@@ -82,13 +82,13 @@ Congratulations! You have now changed the storage engine of the table!
 Here is a little bit of more detailed information about the storage engines, to help explain why different ones are better for different purposes.
 Similarities
 
-    Any database table, regardless of which storage engine it uses, will have a .frm file. This file's name will be the table name followed by this file extension. This file contains table metadata, such as the table definition. Depending on the table's engine5) there may or may not be other files associated with the table.
+Any database table, regardless of which storage engine it uses, will have a .frm file. This file's name will be the table name followed by this file extension. This file contains table metadata, such as the table definition. Depending on the table's engine5) there may or may not be other files associated with the table.
 
 # MyISAM
 
-    A MyISAM table has a total of three files. In addition to the .frm file that all tables have, there is also a .MYD file containing the table data, and a .MYI file containing the indexes.
-    Because MyISAM stores all table information directly within that table's three files, a single crashed table will not directly interfere with the functionality of other tables.
-    Because MyISAM stores all table information directly within that table's three files, it is possible if needed to restore a single database from a Partial VPS Restore, if all tables in that database are using MyISAM.
+- A MyISAM table has a total of three files. In addition to the .frm file that all tables have, there is also a .MYD file containing the table data, and a .MYI file containing the indexes.
+- Because MyISAM stores all table information directly within that table's three files, a single crashed table will not directly interfere with the functionality of other tables.
+- Because MyISAM stores all table information directly within that table's three files, it is possible if needed to restore a single database from a Partial VPS Restore, if all tables in that database are using MyISAM.
 
 # InnoDB
 
@@ -116,10 +116,3 @@ If a table is composed entirely of ephemeral data that does not need to be kept 
 If a table is not often written to,9) especially on a server with many sites, it is likely safest to store it as MyISAM, to better compartmentalize issues in case of the rare instances where InnoDB crash recovery would fail.
 
 If a table is frequently written to and contains non-ephemeral data, then the table should be stored as InnoDB to prevent lock competition from using up too many server resources. If using InnoDB for a table, it is even more important than usual to make sure that cPanel account has automatic backups enabled. If a site is busy enough to need InnoDB tables, it may be time to consider putting the site on its own server, to help prevent an InnoDB failure from affecting other sites.
-
-
-
-
-
-
-
