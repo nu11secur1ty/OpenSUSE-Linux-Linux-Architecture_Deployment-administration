@@ -25,6 +25,7 @@ ALTER TABLE my_table ENGINE=new_engine;
 When you will execute the above command, complete process will be as such – the table will get locked, dumped to a tmp space, then rebuilt with the new engine. Also you will be losing innodb-only info (foreign keys, etc.) and features if you’re going to MyISAM.
 
 ---------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------
 
 # What is the difference between MyISAM and InnoDB?
 
@@ -49,9 +50,11 @@ In general, if a MyISAM table has a problem, the problem will be limited to that
 - Most types of sites store session information as files, but if it must be stored in a database table, MEMORY is likely a better choice of engine than either MyISAM or InnoDB.
 - Similarly, though it is even more rare, certain kinds of site cache data if being stored in a database table should probably use the MEMORY storage engine.
 
-# How to Change a Table's Storage Engine
-
-If you already have a table created that needs to be changed to a different engine, this can be done with an ALTER TABLE statement, like this:
+# Check your tables using the terminal
+```mysql
+MariaDB [(none)]> show table status from your_database;
+```
+# Interface
 
 ```mysql
 mysql> ALTER TABLE dbname.tablename ENGINE = enginename;
