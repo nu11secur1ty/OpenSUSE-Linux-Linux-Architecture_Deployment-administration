@@ -59,6 +59,12 @@ If you prefer to use phpMyAdmin, you would need to select the table:
 
 - click the "Operations" tab: 
 
+![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Mysql/InnoDB%20and%20MyISAM/screen/2.png)
+
+- select the desired engine in the "Storage Engine" dropdown box: 
+
 ![]()
+
+
 
 
