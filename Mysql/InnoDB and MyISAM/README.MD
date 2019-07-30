@@ -117,3 +117,15 @@ If a table is composed entirely of ephemeral data that does not need to be kept 
 If a table is not often written to,9) especially on a server with many sites, it is likely safest to store it as MyISAM, to better compartmentalize issues in case of the rare instances where InnoDB crash recovery would fail.
 
 If a table is frequently written to and contains non-ephemeral data, then the table should be stored as InnoDB to prevent lock competition from using up too many server resources. If using InnoDB for a table, it is even more important than usual to make sure that cPanel account has automatic backups enabled. If a site is busy enough to need InnoDB tables, it may be time to consider putting the site on its own server, to help prevent an InnoDB failure from affecting other sites.
+
+-----------------------------------------------------------------------------------------------------------
+
+1) or MariaDB
+2) or sometimes memory
+3) [citation](https://dev.mysql.com/doc/refman/5.5/en/myisam-storage-engine.html)
+4) replacing dbname with the name of the database, tablename with the name of the table, and enginename with either InnoDB, MyISAM, or MEMORY.
+5) and sometimes the way the engine is configured
+6) in the ibdata file(s).
+7) tmp_table_size or max_heap_table_size, whichever is smaller
+8) depending on index type
+9) i.e., if it is unlikely for multiple queries to try to write to the table at the same time
