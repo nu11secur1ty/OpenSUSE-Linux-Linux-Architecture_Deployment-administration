@@ -83,7 +83,7 @@ Here is a little bit of more detailed information about the storage engines, to 
 
 # Similarities
 
-Any database table, regardless of which storage engine it uses, will have a .frm file. This file's name will be the table name followed by this file extension. This file contains table metadata, such as the table definition. Depending on the table's engine5) there may or may not be other files associated with the table.
+- Any database table, regardless of which storage engine it uses, will have a .frm file. This file's name will be the table name followed by this file extension. This file contains table metadata, such as the table definition. Depending on the table's engine5) there may or may not be other files associated with the table.
 
 # MyISAM
 
