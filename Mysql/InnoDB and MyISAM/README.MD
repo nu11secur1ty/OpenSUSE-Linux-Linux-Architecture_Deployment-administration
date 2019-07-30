@@ -1,3 +1,6 @@
+![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Mysql/InnoDB%20and%20MyISAM/screen/mysql_PNG31.png)
+
+-----------------------------------------------------------------------------------------------------------------------------
 # InnoDB: 
 A transaction-safe (ACID compliant) storage engine for MySQL that has commit, rollback, and crash-recovery capabilities to protect user data. InnoDB row-level locking (without escalation to coarser granularity locks) and Oracle-style consistent nonlocking reads increase multi-user concurrency and performance. InnoDB stores user data in clustered indexes to reduce I/O for common queries based on primary keys. To maintain data integrity, InnoDB also supports FOREIGN KEY referential-integrity constraints. InnoDB is the default storage engine as of MySQL 5.5.5.
 
