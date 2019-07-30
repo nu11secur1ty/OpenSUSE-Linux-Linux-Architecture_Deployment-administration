@@ -48,4 +48,11 @@ In general, if a MyISAM table has a problem, the problem will be limited to that
 
 # How to Change a Table's Storage Engine
 
-If you already have a table created that needs to be changed to a different engine, this can be done with an ALTER TABLE statement, like this:4) 
+If you already have a table created that needs to be changed to a different engine, this can be done with an ALTER TABLE statement, like this:
+
+```mysql
+mysql> ALTER TABLE dbname.tablename ENGINE = enginename;
+```
+If you prefer to use phpMyAdmin, you would need to select the table: 
+![]()
+
