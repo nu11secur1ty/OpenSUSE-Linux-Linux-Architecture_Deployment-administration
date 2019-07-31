@@ -1,7 +1,7 @@
 ![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Mysql/InnoDB%20and%20MyISAM/screen/mysql_PNG31.png)
 
 
-# Storage Engines в MySQL версия 5.5 и основните разлики между тях.
+# Storage Engines в MySQL и основните разлики между тях.
 
 -------------------------------------------------------------------------
 
