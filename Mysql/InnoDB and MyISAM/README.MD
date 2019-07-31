@@ -119,6 +119,10 @@ If a table is not often written to,9) especially on a server with many sites, it
 If a table is frequently written to and contains non-ephemeral data, then the table should be stored as InnoDB to prevent lock competition from using up too many server resources. If using InnoDB for a table, it is even more important than usual to make sure that cPanel account has automatic backups enabled. If a site is busy enough to need InnoDB tables, it may be time to consider putting the site on its own server, to help prevent an InnoDB failure from affecting other sites.
 
 -----------------------------------------------------------------------------------------------------------
+# Conclusion
+- How to Repair MyISAM Tables: [MySQL::MySQL](https://dev.mysql.com/doc/refman/5.7/en/myisam-repair.html)
+
+-----------------------------------------------------------------------------------------------------------
 
 1) or MariaDB
 2) or sometimes memory
