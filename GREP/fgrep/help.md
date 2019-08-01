@@ -68,3 +68,10 @@ if any error occurs and -q is not given, the exit status is 2.
 Report bugs to: bug-grep@gnu.org
 GNU grep home page: <http://www.gnu.org/software/grep/>
 General help using GNU software: <http://www.gnu.org/gethelp/>
+
+# Examples;
+```bash
+fgrep -f words.txt file1
+```
+
+
