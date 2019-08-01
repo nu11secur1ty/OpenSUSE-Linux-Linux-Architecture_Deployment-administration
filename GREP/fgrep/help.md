@@ -78,4 +78,8 @@ fgrep -f words.txt file1
 fgrep -C 0 '(f|g)ile' check_file
 fgrep -C 0 '\(f\|g\)ile' check_file
 ```
+- Output
+```bash
+(f|g)ile
+```
 
