@@ -106,3 +106,16 @@ egrep {\|} pgm.c
 fgrep -l strcpy *.c
 ```
 It searches the files in the current directory that end with .c and displays the names of those files that contain the strcpy string.
+
+- Take a string line and parset it to output file
+```bash
+fgrep "DO NOT" perl5/perlbrew/bin/cpanm > perl
+```
+- Check for result
+```bash
+cat perl
+```
+- output 
+```bash
+# DO NOT EDIT -- this is an auto generated file
+```
