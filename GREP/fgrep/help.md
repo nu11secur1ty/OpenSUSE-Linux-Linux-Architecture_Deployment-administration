@@ -73,5 +73,9 @@ General help using GNU software: <http://www.gnu.org/gethelp/>
 ```bash
 fgrep -f words.txt file1
 ```
-
+- find elements in file
+```bash
+fgrep -C 0 '(f|g)ile' check_file
+fgrep -C 0 '\(f\|g\)ile' check_file
+```
 
