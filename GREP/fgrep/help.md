@@ -82,4 +82,27 @@ fgrep -C 0 '\(f\|g\)ile' check_file
 ```bash
 (f|g)ile
 ```
+# To search several files for a simple string of characters: 
+```bash
+fgrep strcpy *.c
+```
 
+This searches for the string strcpy in all files in the current directory with names that end in the .c character string.
+- To count the number of lines that match a pattern:
+```bash
+fgrep -c “{” pgm.c
+fgrep -c “}” pgm.c
+```
+It displays the number of lines in pgm.c that contain left and right braces.
+
+If you do not put more than one { (left brace) or one } (right brace) on a line in your C programs, and if the braces are properly balanced, the two numbers displayed are usually the same if the proper conditions are met. If the numbers are not the same, you can display the lines that contain braces in the order that they occur in the file with: 
+
+```bash
+egrep {\|} pgm.c 
+```
+
+- To display the names of files that contain a pattern:
+```bash
+fgrep -l strcpy *.c
+```
+It searches the files in the current directory that end with .c and displays the names of those files that contain the strcpy string.
