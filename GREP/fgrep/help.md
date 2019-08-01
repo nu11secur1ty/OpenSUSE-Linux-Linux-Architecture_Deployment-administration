@@ -1,4 +1,5 @@
 Pattern selection and interpretation:
+```bash
   -E, --extended-regexp     PATTERN is an extended regular expression
   -F, --fixed-strings       PATTERN is a set of newline-separated strings
   -G, --basic-regexp        PATTERN is a basic regular expression (default)
@@ -9,14 +10,16 @@ Pattern selection and interpretation:
   -w, --word-regexp         force PATTERN to match only whole words
   -x, --line-regexp         force PATTERN to match only whole lines
   -z, --null-data           a data line ends in 0 byte, not newline
-
+```
 Miscellaneous:
+```bash
   -s, --no-messages         suppress error messages
   -v, --invert-match        select non-matching lines
   -V, --version             display version information and exit
       --help                display this help text and exit
-
+```
 Output control:
+```bash
   -m, --max-count=NUM       stop after NUM selected lines
   -b, --byte-offset         print the byte offset with output lines
   -n, --line-number         print line number with output lines
@@ -45,8 +48,9 @@ Output control:
   -c, --count               print only a count of selected lines per FILE
   -T, --initial-tab         make tabs line up (if needed)
   -Z, --null                print 0 byte after FILE name
-
+```
 Context control:
+```bash
   -B, --before-context=NUM  print NUM lines of leading context
   -A, --after-context=NUM   print NUM lines of trailing context
   -C, --context=NUM         print NUM lines of output context
@@ -55,7 +59,7 @@ Context control:
       --colour[=WHEN]       use markers to highlight the matching strings;
                             WHEN is 'always', 'never', or 'auto'
   -U, --binary              do not strip CR characters at EOL (MSDOS/Windows)
-
+```
 When FILE is '-', read standard input.  With no FILE, read '.' if
 recursive, '-' otherwise.  With fewer than two FILEs, assume -h.
 Exit status is 0 if any line is selected, 1 otherwise;
