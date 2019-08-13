@@ -11,7 +11,7 @@ chown options owner-user:owner-group file
 # Examples
 - First, list permissions for demo.txt, enter:
 ```bash
-# ls -l demo.txt
+ls -l demo.txt
 ```
 - Sample outputs:
 ```bash
@@ -20,8 +20,8 @@ chown options owner-user:owner-group file
 - In this example change file ownership to nu11secur1ty user and list the permissions, run:
 
 ```bash
-# chown nu11secur1ty demo.txt
-# ls -l demo.txt
+chown nu11secur1ty demo.txt
+ls -l demo.txt
 ```
 
 - Sample outputs:
@@ -33,8 +33,8 @@ chown options owner-user:owner-group file
 In this next example, the owner is set to nu11secur1ty followed by a colon and a group onwership is also set to nu11secur1ty group, run:
 
 ```bash
-# chown nu11secur1ty:nu11secur1ty demo.txt
-# ls -l demo.txt
+chown nu11secur1ty:nu11secur1ty demo.txt
+ls -l demo.txt
 ```
 
 - Sample outputs:
@@ -47,8 +47,8 @@ In this example, change only the group of file. To do so, the colon and followin
 but the owner is omitted, only the group of the files is changed:
 
 ```bash
-# chown :ftp demo.txt
-# ls -l demo.txt
+chown :ftp demo.txt
+ls -l demo.txt
 ```
 - Sample outputs:
 
@@ -58,20 +58,20 @@ but the owner is omitted, only the group of the files is changed:
 
 Please note that if only a colon is given, or if NEW-OWNER is empty, neither the owner nor the group is changed:
 ```bash
-# chown : demo.txt
+chown : demo.txt
 ```
 
 In this example, change the owner of /foo to “root”, execute:
 ```bash
-# chown root /foo
+chown root /foo
 ```
 Likewise, but also change its group to “httpd”, enter:
 ```bash
-# chown root:httpd /foo
+chown root:httpd /foo
 ```
 Change the owner of /foo and subfiles to “root”, run:
 ```bash
-# chown -R root /u
+chown -R root /u
 ```
 Where,
 
