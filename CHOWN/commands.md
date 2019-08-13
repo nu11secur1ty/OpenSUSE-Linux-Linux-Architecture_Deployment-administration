@@ -40,7 +40,7 @@ In this next example, the owner is set to nu11secur1ty followed by a colon and a
 - Sample outputs:
 
 ```bash
--rw-r--r-- 1 vivek vivek 0 Aug 31 05:48 demo.txt
+-rw-r--r-- 1 nu11secur1ty nu11secur1ty 0 Aug 31 05:48 demo.txt
 ```
 
 In this example, change only the group of file. To do so, the colon and following GROUP-name ftp are given, 
@@ -53,7 +53,7 @@ but the owner is omitted, only the group of the files is changed:
 - Sample outputs:
 
 ```bash
--rw-r--r-- 1 vivek ftp 0 Aug 31 05:48 demo.txt
+-rw-r--r-- 1 nu11secur1ty ftp 0 Aug 31 05:48 demo.txt
 ```
 
 Please note that if only a colon is given, or if NEW-OWNER is empty, neither the owner nor the group is changed:
