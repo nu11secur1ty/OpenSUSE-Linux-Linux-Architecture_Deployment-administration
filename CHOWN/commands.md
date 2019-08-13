@@ -30,7 +30,7 @@ chown options owner-user:owner-group file
 -rw-r--r-- 1 nu11secur1ty root 0 Aug 31 05:48 demo.txt
 ```
 
-In this next example, the owner is set to vivek followed by a colon and a group onwership is also set to vivek group, run:
+In this next example, the owner is set to nu11secur1ty followed by a colon and a group onwership is also set to vivek group, run:
 
 ```bash
 # chown nu11secur1ty:nu11secur1ty demo.txt
