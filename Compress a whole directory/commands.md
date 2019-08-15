@@ -10,3 +10,14 @@ $ tar -zxvf prog-1-jan-2005.tar.gz -C /tmp
 $ cd /tmp
 $ ls -
 ```
+# To compress directory named /home/nu11secur1ty/bin/ in to a /tmp/bin-backup.tar.gz type the tar command on Linux:
+```bash
+tar -zcvf /tmp/bin-backup.tar.gz /home/nu11secur1ty/bin/
+```
+
+# You can compress multiple directories too:
+
+```bash
+tar -zcvf my-compressed.tar.gz /path/to/dir1/ /path/to/dir2/
+```
+
