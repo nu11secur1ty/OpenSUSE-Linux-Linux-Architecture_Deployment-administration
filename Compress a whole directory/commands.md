@@ -2,3 +2,11 @@
 ```bash
 tar -zcvf prog-1-jan-2005.tar.gz /home/gosho/prog
 ```
+
+# If you wish to extract files in particular directory, for example in /tmp then you need to use the following command:
+
+```bash
+$ tar -zxvf prog-1-jan-2005.tar.gz -C /tmp
+$ cd /tmp
+$ ls -
+```
