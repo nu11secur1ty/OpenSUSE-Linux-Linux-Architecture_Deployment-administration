@@ -61,5 +61,10 @@ Use ionice command to set or get the I/O scheduling class and priority for a pro
 1.    -c or --class {class} : Name or number of scheduling class, 0: none, 1: realtime, 2: best-effort, 3: idle.
 2.    -n or --classdata {num} : priority (0..7) in the specified scheduling class, only for the realtime and best-effort classes
 ```
+# rsync recursively with a certain depth of subfolders
+```bash
+rsync -r source root@0.0.0.0:/your/path/source
+```
 
 # WARNING: The "rsync" protocol witch not setting up can be slowing all your internet traffic!
+
