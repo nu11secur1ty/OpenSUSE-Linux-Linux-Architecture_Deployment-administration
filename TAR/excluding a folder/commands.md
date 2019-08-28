@@ -19,7 +19,6 @@ apple  banana  peach  tomato
 $ tar -czf onlyfruit.tar.gz --exclude=tomato --exclude=peach fruit/
 $ tar tf onlyfruit.tar.gz 
 fruit/
-fruit/peach/
 fruit/apple/
 fruit/banana/
 ```
