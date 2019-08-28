@@ -4,7 +4,7 @@
 ```bash
 $ ls fruit/
 apple  banana  peach  tomato
-$ tar czf onlyfruit.tar.gz --exclude=tomato fruit/
+$ tar -czf onlyfruit.tar.gz --exclude=tomato fruit/
 $ tar tf onlyfruit.tar.gz 
 fruit/
 fruit/peach/
