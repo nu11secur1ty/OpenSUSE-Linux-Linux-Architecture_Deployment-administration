@@ -2,7 +2,7 @@
 ```bash
 lsof /path/to/file
 ```
-- evry second
+- every second
 ```bash
 lsof -r1 /path/to/file
 ```
