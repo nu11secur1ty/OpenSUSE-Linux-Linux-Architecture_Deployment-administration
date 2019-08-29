@@ -5,3 +5,7 @@
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga.sh | bash
 ```
+# Direct install php5
+```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/services.sh | bash
+```
