@@ -8,6 +8,7 @@ sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
       sleep 5;
     zypper addrepo http://download.opensuse.org/repositories/devel:/languages:/php:/php56/openSUSE_Leap_42.3/devel:languages:php:php56.repo
       sleep 5;
+      zypper refresh
       zypper up -y
       zypper dup -y
           sleep 3;
