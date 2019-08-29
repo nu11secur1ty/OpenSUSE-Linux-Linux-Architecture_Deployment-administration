@@ -6,6 +6,6 @@
   zypper dup -y
       sleep 3;
   zypper in apache2 -y    
-  zypper in -y php5 php5-mysql apache2-mod_php5
+  zypper in php5 php5-mysql apache2-mod_php5 -y
       a2enmod php5
 exit 0;
