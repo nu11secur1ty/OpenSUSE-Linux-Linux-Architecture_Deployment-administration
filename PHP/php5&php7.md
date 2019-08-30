@@ -2,7 +2,8 @@
 - Install php5
 --------------------------------------------------
 ```bash
-zypper in php5 php5-mysql apache2-mod_php5
+zypper in apache2 -y
+zypper in php5 php5-mysql apache2-mod_php5 -y
 ```
 
 - Installin php7 dependency packages
