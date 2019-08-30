@@ -16,3 +16,4 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Arch
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/services.sh | bash
 ```
+**NOTE:** If this repository won't work, please write to me on my mail, which you will find on `https://www.nu11secur1ty.com/`
