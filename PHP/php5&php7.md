@@ -69,8 +69,7 @@ php: /usr/bin/php /usr/local/bin/php /usr/local/php /usr/share/man/man1/php.1.gz
 # Create soft link
 ```bash
 whereis php
-cd /go/to/path
-ln -s phpx phpy
+ln -s /go/to/source/phpx /go/to/destination/phpy
 ```
 
 **NOTE:** *You can make a soft of* ***php7 - php-cgi*** *link if you want and if you know what actually happens :)*
