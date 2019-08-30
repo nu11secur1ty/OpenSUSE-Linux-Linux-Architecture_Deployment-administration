@@ -9,15 +9,15 @@ zypper in -y php5 php5-mysql apache2-mod_php5
 - Installin php7 dependency packages
 --------------------------------------------------
 ```bash
-zypper in libjpeg-devel
-zypper in libxml2-devel
-zypper in sqlite3
-zypper in bison3 # If you need you must compiling the bison 3
-zypper in bison
-zypper in gcc
-zypper in gmp-devel
-zypper in openssl-devel
-zypper in make
+zypper in -y libjpeg-devel
+zypper in -y libxml2-devel
+zypper in -y sqlite3
+zypper in -y bison3 # If you need you must compiling the bison 3
+zypper in -y bison
+zypper in -y gcc
+zypper in -y gmp-devel
+zypper in -y openssl-devel
+zypper in -y make
 ```
 **NOTE:** *Check for dependencies*
 
