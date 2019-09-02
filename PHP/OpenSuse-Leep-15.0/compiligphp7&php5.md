@@ -1,3 +1,14 @@
+# Setting up PHP7
+- Direct Installing PHP7
+
+Make sure you have root access — see above. Install php7 using:
+```
+zypper in php7 php7-mysql apache2-mod_php7
+a2enmod php7
+```
+Your are done, php7 is now installed.
+
+
 # Example modules:
 ```xml
 curl 
