@@ -38,7 +38,7 @@ make
 make install
 ```
 
-# Building
+# Building with modules dependency
 ```bash
 cd /usr/src/
 wget https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/raw/master/PHP/php5env/php-5.6.40.tar.gz
