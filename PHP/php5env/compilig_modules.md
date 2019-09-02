@@ -68,6 +68,8 @@ cd /usr/src/your_php_env/
 # For gmp
 ```bash
 download gmp.h
+cd /your/path/
+wget https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/PHP/gmp.h
 ```
 - puth the file in:
 ```bash
