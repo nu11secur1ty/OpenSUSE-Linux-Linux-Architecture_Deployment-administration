@@ -27,6 +27,16 @@ zypper in openssl-devel
 zypper in make
 ```
 
+# Installing Curl 
+```bash
+cd /usr/src/
+wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
+tar xvf curl-7.37.1.tar.bz2
+cd curl-7.37.1/
+./configure # If you need
+make
+make install
+```
 
 # Building
 ```bash
