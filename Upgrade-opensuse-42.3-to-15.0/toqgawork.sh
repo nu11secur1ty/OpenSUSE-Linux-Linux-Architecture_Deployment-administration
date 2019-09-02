@@ -5,7 +5,7 @@ zypper up -y
 zypper dup -y
 
 # Remove old php5
-zypper remove php5
+zypper remove -y php5
 
 # Install a new php7
 zypper in -y php7 php7-mysql apache2-mod_php7 
@@ -14,7 +14,7 @@ a2enmod php7
 # Upgrade 
 sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
   zypper refresh
-  zypper dup --download-in-advance
+  zypper dup -y --download-in-advance
 
 # Compiling a php5
   zypper in libjpeg-devel -y
