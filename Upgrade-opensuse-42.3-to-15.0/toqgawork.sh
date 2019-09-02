@@ -1,9 +1,9 @@
 #!/usr/bin/bash
 # Author V.Varbanovski @nu11secur1ty
+
 # Update old version
 zypper up -y
 zypper dup -y
-
 # Remove old php5
   zypper remove -y php5
 # Install a new php7
