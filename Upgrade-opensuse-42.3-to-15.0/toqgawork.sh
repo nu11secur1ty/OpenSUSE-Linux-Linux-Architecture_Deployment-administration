@@ -8,7 +8,7 @@ zypper dup -y
 zypper remove php5
 
 # Install a new php7
-zypper in php7 php7-mysql apache2-mod_php7 -y
+zypper in -y php7 php7-mysql apache2-mod_php7 
 a2enmod php7
 
 # Upgrade 
