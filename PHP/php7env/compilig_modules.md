@@ -90,5 +90,13 @@ make install
 whereis php
 ln -s /usr/local/bin/php-cgi /usr/bin/php7
 ```
+# Setting up PHP
+- Direct Installing PHP7
 
+Make sure you have root access — see above. Install php7 using:
+```
+zypper in php7 php7-mysql apache2-mod_php7
+a2enmod php7
+```
+Your are done, php7 is now installed.
 # Good luck ;)
