@@ -1,6 +1,8 @@
 #!/usr/bin/bash
+# Update old version
 zypper up -y
 zypper dup -y
+# Upgrade 
   sleep 3;
 sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
   zypper refresh
