@@ -8,6 +8,12 @@
 # Dirrect install of toqga patch
 ![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Upgrade-opensuse-42.3-to-15.0/wall/people.jpg)
 
+- WARNING: this is a underconstruction program
+```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqgawork.sh | bash
+```
+- Workong program!
+
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga.sh | bash
 ```
