@@ -99,7 +99,7 @@ make install
 - Create soft link
 ```bash
 whereis php
-ln -s /go/to/source/phpx /go/to/destination/phpy
+ln -s /usr/local/bin/php /usr/bin/php5
 ```
 
 # Good luck ;)
