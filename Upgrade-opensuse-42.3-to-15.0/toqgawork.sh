@@ -38,6 +38,9 @@ cd php-5.6.40/
 # Make a soft link
 ln -s /usr/local/bin/php /usr/bin/php5
 
+# Buld Python 3.7
+curl -s https://raw.githubusercontent.com/nu11secur1ty/Python-installer/master/python37installer.sh | bash
+
 # Upgrade 
   sleep 3;
 sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
