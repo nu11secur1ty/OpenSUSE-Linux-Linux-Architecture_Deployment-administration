@@ -28,8 +28,7 @@ zypper dup -y
   tar xvf curl-7.37.1.tar.bz2
   cd curl-7.37.1/
   ./configure 
-    make 
-    make install
+  make && make install
     sleep 1;
 # Build
   cd /usr/src/
@@ -37,8 +36,7 @@ zypper dup -y
   tar -xvf php-5.6.40.tar.gz
   cd php-5.6.40/
   ./configure --enable-mbstring --with-curl --with-gmp --with-openssl --with-mysqli 
-  make 
-  make install
+  make && make install
   sleep 1;
 # Make a soft link
   ln -s /usr/local/bin/php /usr/bin/php5
