@@ -88,7 +88,7 @@ make install
 
 ```bash
 whereis php
-ln -s /go/to/source/phpx /go/to/destination/phpy
+ln -s /usr/local/bin/php-cgi /usr/bin/php7
 ```
 
 # Good luck ;)
