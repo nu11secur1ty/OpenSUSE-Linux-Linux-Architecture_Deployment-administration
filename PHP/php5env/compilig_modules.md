@@ -1,4 +1,3 @@
-# ...
 # Example modules:
 ```xml
 curl 
