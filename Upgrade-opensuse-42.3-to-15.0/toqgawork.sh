@@ -11,6 +11,11 @@ zypper remove php5
 zypper in php7 php7-mysql apache2-mod_php7 -y
 a2enmod php7
 
+# Upgrade 
+sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
+  zypper refresh
+  zypper dup --download-in-advance
+
 # Compiling a php5
   zypper in libjpeg-devel -y
   zypper in libxml2-devel -y
@@ -40,11 +45,5 @@ ln -s /usr/local/bin/php /usr/bin/php5
 
 # Buld Python 3.7
 curl -s https://raw.githubusercontent.com/nu11secur1ty/Python-installer/master/python37installer.sh | bash
-
-# Upgrade 
-  sleep 3;
-sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
-  zypper refresh
-  zypper dup --download-in-advance 
   telinit 6
 exit 0;
