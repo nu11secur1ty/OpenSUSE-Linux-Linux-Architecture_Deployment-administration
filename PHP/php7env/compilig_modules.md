@@ -14,7 +14,7 @@ php-cgi -m
 ```
 
 
-# Installin php7 dependency packages
+# Installin php5 and php7 dependency packages
 ```bash
 zypper in libjpeg-devel
 zypper in libxml2-devel
