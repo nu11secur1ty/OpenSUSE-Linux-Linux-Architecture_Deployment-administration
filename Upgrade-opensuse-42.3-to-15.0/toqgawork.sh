@@ -17,15 +17,15 @@ sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
   zypper dup -y --download-in-advance
 
 # Compiling a php5
-  zypper in libjpeg-devel -y
-  zypper in libxml2-devel -y
-  zypper in sqlite3 -y
-  zypper in bison -y
-  zypper in gcc -y
-  zypper in gmp-devel -y
-  zypper in openssl-devel -y
-  zypper in make -y
-
+  zypper in -y libjpeg-devel 
+  zypper in -y libxml2-devel 
+  zypper in -y sqlite3 
+  zypper in -y bison 
+  zypper in -y gcc 
+  zypper in -y gmp-devel 
+  zypper in -y openssl-devel 
+  zypper in -y make 
+  
 #Installing Curl
 cd /usr/src/
 wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
