@@ -14,7 +14,7 @@ php-cgi -m
 ```
 
 
-# Installin php5 and php7 dependency packages
+# Installin php5 dependency packages
 ```bash
 zypper in libjpeg-devel
 zypper in libxml2-devel
@@ -50,6 +50,7 @@ make
 make test # if you want to test php5 before installing 
 make install
 ```
+
 # Compiling a single module
 
 ```bash
