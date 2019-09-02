@@ -82,4 +82,13 @@ make
 make test
 make install
 ```
+
+# Create soft link
+```bash
+whereis php
+ln -s /go/to/source/phpx /go/to/destination/phpy
+```
+
+**NOTE:** *You can make a soft of* ***php7 - php-cgi*** *link if you want and if you know what actually happens :)*
+
 # Good luck ;)
