@@ -37,7 +37,7 @@ cd php-5.6.40/
 ./configure
 ./configure --enable-mbstring --with-curl --with-gmp --with-openssl --with-mysqli #In my case
 make
-make test # if you want to test php7 before installing 
+make test # if you want to test php5 before installing 
 make install
 ```
 # Compiling a single module
