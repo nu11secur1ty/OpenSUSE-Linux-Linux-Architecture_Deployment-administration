@@ -31,7 +31,7 @@ zypper in make
 # Building
 ```bash
 cd /usr/src/
-wget https://www.php.net/distributions/php-7.3.6.tar.gz
+wget https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/raw/master/PHP/php7env/php-7.3.6.tar.gz
 tar -xvf php-7.3.6.tar.gz
 cd php-7.3.6/
 ./configure
