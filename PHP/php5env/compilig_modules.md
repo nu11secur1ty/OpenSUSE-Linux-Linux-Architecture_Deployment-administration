@@ -31,9 +31,9 @@ zypper in make
 # Building
 ```bash
 cd /usr/src/
-wget https://www.php.net/distributions/php-7.3.6.tar.gz
-tar -xvf php-7.3.6.tar.gz
-cd php-7.3.6/
+wget https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/raw/master/PHP/php5env/php-5.6.40.tar.gz
+tar -xvf php-5.6.40.tar.gz
+cd php-5.6.40/
 ./configure
 ./configure --enable-mbstring --with-curl --with-gmp --with-openssl --with-mysqli #In my case
 make
