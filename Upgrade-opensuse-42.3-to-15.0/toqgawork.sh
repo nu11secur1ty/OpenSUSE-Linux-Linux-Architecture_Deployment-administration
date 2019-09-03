@@ -26,13 +26,14 @@ zypper dup -y
   ./configure 
   make && make install
     sleep 1;
-# Build
+# Build PHP5
   cd /usr/src/
   wget https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/raw/master/PHP/php5env/php-5.6.40.tar.gz
   tar -xvf php-5.6.40.tar.gz
   cd php-5.6.40/
   ./configure --enable-mbstring --with-curl --with-gmp --with-openssl --with-mysqli 
   make && make install
+  a2enmod php5
   sleep 1;
 # Make a soft link
   ln -s /usr/local/bin/php /usr/bin/php5
