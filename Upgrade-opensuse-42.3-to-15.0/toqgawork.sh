@@ -7,17 +7,17 @@ zypper dup -y
 # Remove old php5
   zypper remove -y php5
 # Install a new php7
-  zypper in -y php7 php7-mysql apache2-mod_php7 
+  zypper install -y php7 php7-mysql apache2-mod_php7 
   a2enmod php7
 # Compiling a php5
-  zypper in -n libjpeg-devel 
-  zypper in -n libxml2-devel 
-  zypper in -n sqlite3 
-  zypper in -n bison 
-  zypper in -n gcc 
-  zypper in -n gmp-devel 
-  zypper in -n openssl-devel 
-  zypper in -n make 
+  zypper install -y libjpeg-devel 
+  zypper install -y libxml2-devel 
+  zypper install -y sqlite3 
+  zypper install -y bison 
+  zypper install -y gcc 
+  zypper install -y gmp-devel 
+  zypper install -y openssl-devel 
+  zypper install -y make 
 #Installing Curl
   cd /usr/src/
   wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
