@@ -9,19 +9,15 @@ zypper dup -y
 # Install a new php7
   zypper in -y php7 php7-mysql apache2-mod_php7 
   a2enmod php7
-# Upgrade 
-  sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
-  zypper refresh
-  zypper dup -y --download-in-advance
 # Compiling a php5
-  zypper in -y libjpeg-devel 
-  zypper in -y libxml2-devel 
-  zypper in -y sqlite3 
-  zypper in -y bison 
-  zypper in -y gcc 
-  zypper in -y gmp-devel 
-  zypper in -y openssl-devel 
-  zypper in -y make 
+  zypper in -n libjpeg-devel 
+  zypper in -n libxml2-devel 
+  zypper in -n sqlite3 
+  zypper in -n bison 
+  zypper in -n gcc 
+  zypper in -n gmp-devel 
+  zypper in -n openssl-devel 
+  zypper in -n make 
 #Installing Curl
   cd /usr/src/
   wget http://curl.haxx.se/download/curl-7.37.1.tar.bz2
@@ -42,5 +38,9 @@ zypper dup -y
   ln -s /usr/local/bin/php /usr/bin/php5
 # Buld Python 3.7
   curl -s https://raw.githubusercontent.com/nu11secur1ty/Python-installer/master/python37installer.sh | bash
+# Upgrade 
+  sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
+  zypper refresh
+  zypper dup -y --download-in-advance
   telinit 6
 exit 0;
