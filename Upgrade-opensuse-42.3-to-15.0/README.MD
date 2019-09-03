@@ -8,13 +8,13 @@
 # Dirrect install of toqga patch
 ![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Upgrade-opensuse-42.3-to-15.0/wall/people.jpg)
 
-- Workong program!
+- Base program!
 
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga.sh | bash
 ```
 
-- WARNING: this is under construction program
+- Full install `PHP5`, `PHP7`, `Python3.7`
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqgawork.sh | bash
 ```
