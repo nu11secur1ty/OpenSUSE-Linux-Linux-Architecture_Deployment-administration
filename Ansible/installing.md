@@ -52,3 +52,26 @@ zypper install -y ansible
 
 ## db-[99:101]-node.example.com
 ```
+# Test the server
+- NOTE: Before you do that you must set up ssh pub key between these two machines!
+Then you must set up these two machines to seeing each other, himself in `/etc/hosts`
+```bash
+ansible webservers -m ping
+```
+# Installing the software and test the server controller
+- On the ansible server
+
+```bash 
+ansible webservers -a "zypper install -y apache2"
+ansible webservers -a "rcapache2 start"
+```
+# Create a simple Hello Ansible app
+- On the webserver - target
+```bash 
+vim /srv/www/htdocs/index.html
+```
+- add:
+```html
+<h1>Hello Ansible</h1>
+```
+# Good luck friends and have fun! ;)
