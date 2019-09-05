@@ -1,2 +1,5 @@
 # IMPORTANT: 
-`**You must use your domains and your IP be couse if you use my IP addresse this wont work for you if you do not use the same netrwork ofcourse ;) `
+**`You must use your domains and your IP because if you use my IP addresses this won't work for you if you do not use the same inside network of course ;)`**
+
+# WARNING:
+**`Edit your`*****add.yml*****`and`*****`delete.yml`*****`files, using you IP addresses`**
