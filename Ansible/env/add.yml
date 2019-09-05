@@ -1,0 +1,10 @@
+---
+- hosts: 192.168.1.93
+  user: root
+  tasks:
+  - name: Add line
+    lineinfile:
+          path: /root/remote_server.txt
+          line: "Hello ansible new"
+          state: present
+          backup: yes
