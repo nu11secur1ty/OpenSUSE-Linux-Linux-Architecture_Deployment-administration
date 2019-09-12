@@ -46,3 +46,5 @@ http_access allow all
 
 #######################################################
 ```
+# If you do not know how to use in `outside network` please write to me on my email!
+- BR 
