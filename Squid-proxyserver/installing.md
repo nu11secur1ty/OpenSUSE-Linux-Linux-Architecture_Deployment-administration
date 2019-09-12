@@ -14,7 +14,20 @@ http://www.twitter.com
 https://www.twitter.com
 twitter.com
 ```
-
+Add sites in black list:
+```bash
+vim /etc/squid/blocked_sites.acl
+```
+add:
+```bash
+www.facebook.com
+https://twitter.com/
+twitter.com
+http://twitter.com/
+http://www.twitter.com/
+abv.bg
+```
+Add your rule
 ```bash
 vim /etc/squid/squid.conf
 ```
