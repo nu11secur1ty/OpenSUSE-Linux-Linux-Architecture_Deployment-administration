@@ -8,15 +8,6 @@ systemctl enable squid
 ```bash
 vim /etc/squid/blocked_sites.acl
 ``` 
- add
-```bash
-www.facebook.com
-www.pornhub.com
-www.twitter.com
-http://www.twitter.com
-https://www.twitter.com
-twitter.com
-```
 Add sites in black list:
 ```bash
 vim /etc/squid/blocked_sites.acl
