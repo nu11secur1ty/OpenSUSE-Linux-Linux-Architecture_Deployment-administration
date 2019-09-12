@@ -6,7 +6,7 @@ systemctl enable squid
 ```
 - Create restrict domains list
 ```bash
-vim /etc/squid/blocked_sites.acl
+touch /etc/squid/blocked_sites.acl
 ``` 
 Add sites in black list:
 ```bash
