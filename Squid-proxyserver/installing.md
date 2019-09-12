@@ -36,7 +36,7 @@ acl local_net src 192.168.1.30
 acl restricted_sites url_regex -i "/etc/squid/blocked_sites.acl"
 http_access deny restricted_sites
 http_access allow local_net
-http_access allow all
+# http_access allow all
 
 #######################################################
 ```
