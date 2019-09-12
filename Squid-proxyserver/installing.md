@@ -1,7 +1,10 @@
+# Installing
+```bash
 zypper in squid
 systemctl start squid
 systemctl enable squid
-
+```
+- Create restrict domains list
 ```bash
 vim /etc/squid/blocked_sites.acl
 ``` 
