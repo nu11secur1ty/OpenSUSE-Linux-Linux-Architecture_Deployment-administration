@@ -28,7 +28,7 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Arch
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/services.sh | bash
 ```
 
-# Update Opensuse Leap 15.0 to 15.1
+# Base Upgrade Opensuse Leap 15.0 to 15.1
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga151.sh | bash
 ```
