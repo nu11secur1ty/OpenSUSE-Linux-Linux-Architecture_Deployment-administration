@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+# Author @nu11secur1ty
 # Update old version
 zypper up -y
 zypper dup -y
