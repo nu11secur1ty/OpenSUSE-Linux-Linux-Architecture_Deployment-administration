@@ -33,6 +33,8 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Arch
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga151.sh | bash
 ```
 ![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Upgrade-opensuse-42.3-to-15.0/wall/screen-10-02.2019/Screenshot%20from%202019-10-02%2013-53-47.png)
+![](https://github.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/blob/master/Upgrade-opensuse-42.3-to-15.0/wall/screen-10-02.2019/Screenshot%20from%202019-10-02%2014-17-10.png)
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 # Base Upgrade Opensuse Leap 15.1 to 15.2
