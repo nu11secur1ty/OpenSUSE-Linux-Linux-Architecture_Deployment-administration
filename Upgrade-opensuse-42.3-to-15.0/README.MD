@@ -33,5 +33,4 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Arch
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga151.sh | bash
 ```
 
-**NOTE:** If this repository won't work, please write to me on my mail, which you will find on 
-https://www.nu11secur1ty.com/
+**NOTE:** If this repository won't work, please write to me on my mail, which you will find on https://www.nu11secur1ty.com/
