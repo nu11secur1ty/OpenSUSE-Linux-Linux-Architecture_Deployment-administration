@@ -1,4 +1,5 @@
 #!/usr/bin/bash
+# Author @nu11secur1ty
   zypper addrepo http://download.opensuse.org/repositories/devel:/languages:/php:/php56/openSUSE_Leap_42.3/devel:languages:php:php56.repo
       sleep 5;
   zypper refresh
