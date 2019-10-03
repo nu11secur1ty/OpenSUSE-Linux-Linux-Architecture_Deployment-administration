@@ -17,7 +17,7 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Arch
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqgawork.sh | bash
 ```
-***Run this command in your terminal like a root, sit back comfortably, take a coffee and be happy with nu11secur1ty***
+***Run this command in your terminal like a root user, sit back comfortably, take a coffee and be happy with nu11secur1ty***
 
 ---------------------------------------------------------------------------------------------------------------------------
 
