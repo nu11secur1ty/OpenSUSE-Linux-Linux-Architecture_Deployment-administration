@@ -5,7 +5,7 @@
 -------------------------------------------------------------------------------------------------------------------------
 
 # Upgrade opensuse 42.3 to 15.0
-# Dirrect install of toqga patch
+- Dirrect install of toqga patch
 
 - The base program, only upgrade!
 
