@@ -29,7 +29,7 @@ password="password"
 
 echo "===Size of databases===";
 mysql -u $user -p$password <<EOFMYSQL
-SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 / 1024 AS "Size (GB)" FROM information_schema.TABLES GROUP BY table_schema\G;
+SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 AS "Size (MB)" FROM information_schema.TABLES GROUP BY table_schema\G;
 EOFMYSQL
         echo ""
 echo "===Processlist===";
