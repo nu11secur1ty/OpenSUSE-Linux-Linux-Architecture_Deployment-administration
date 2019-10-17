@@ -5,7 +5,7 @@ MariaDB [(none)]> SELECT table_schema AS "Database", SUM(data_length + index_len
 ```
 - in BG
 ```bash
-SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 / 1024 AS "Size (GB)" FROM information_schema.TABLES GROUP BY table_schema;
+MariaDB [(none)]> SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 / 1024 AS "Size (GB)" FROM information_schema.TABLES GROUP BY table_schema;
 ```
 
 - Output MB
