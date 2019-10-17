@@ -8,9 +8,8 @@ MariaDB [(none)]> SELECT table_schema AS "Database", SUM(data_length + index_len
 SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 / 1024 AS "Size (GB)" FROM information_schema.TABLES GROUP BY table_schema;
 ```
 
-- Output
+- Output MB
 ```
-mysql> SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024 / 1024 AS "Size (MB)" FROM information_schema.TABLES GROUP BY table_schema;
 +--------------------+------------+
 | Database           | Size (MB)  |
 +--------------------+------------+
@@ -21,6 +20,22 @@ mysql> SELECT table_schema AS "Database", SUM(data_length + index_length) / 1024
 | performance_schema | 0.00000000 |
 | sys                | 0.01562500 |
 +--------------------+------------+
+6 rows in set (0.02 sec)
+
+mysql> 
+```
+- Output BG
+```
++--------------------+----------------+
+| Database           | Size (GB)      |
++--------------------+----------------+
+| information_schema | 0.000152587891 |
+| kur                | 0.000015258789 |
+| mysql              | 0.002354673110 |
+| odds               | 0.000015258789 |
+| performance_schema | 0.000000000000 |
+| sys                | 0.000015258789 |
++--------------------+----------------+
 6 rows in set (0.02 sec)
 
 mysql> 
