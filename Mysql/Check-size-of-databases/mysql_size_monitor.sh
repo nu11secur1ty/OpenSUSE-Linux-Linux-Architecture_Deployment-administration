@@ -35,7 +35,7 @@ EOFMYSQL
 echo "===Processlist===";
         mysql -u $user -p$password -e "SHOW PROCESSLIST;"
         echo ""
-echo "===Full-Processlist-Queriesi===";
+echo "===Full-Processlist-Queries===";
         mysql -u $user -p$password -e "SHOW FULL PROCESSLIST\G;"
         echo ""
 echo "===WARNINGS===";
