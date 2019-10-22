@@ -40,8 +40,10 @@ zypper dup -y
 # Buld Python 3.7
   curl -s https://raw.githubusercontent.com/nu11secur1ty/Python-installer/master/python37installer.sh | bash
 # Upgrade 
+  rm /etc/zypp/repos.d/openSUSE
   sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
   zypper refresh
-  zypper dup --download-in-advance
+  zypper up -y
+  zypper dup -y
   telinit 6
 exit 0;
