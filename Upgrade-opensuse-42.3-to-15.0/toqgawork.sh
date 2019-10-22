@@ -42,6 +42,6 @@ zypper dup -y
 # Upgrade 
   sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
   zypper refresh
-  zypper dup -y --download-in-advance
+  zypper dup --download-in-advance
   telinit 6
 exit 0;
