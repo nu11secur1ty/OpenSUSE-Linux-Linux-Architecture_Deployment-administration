@@ -43,7 +43,8 @@ zypper dup -y
   cd /etc/zypp/repos.d
     rm *openSUSE*
   # test
-  sed -i 's/42.3/15.2/' /etc/zypp/repos.d/*
+  #sed -i 's/42.3/15.2/' /etc/zypp/repos.d/*
+  sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
   zypper refresh
   zypper up -y
   zypper dup -y
