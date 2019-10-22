@@ -42,7 +42,8 @@ zypper dup -y
 # Upgrade 
   cd /etc/zypp/repos.d
     rm *openSUSE*
-  sed -i 's/42.3/15.0/' /etc/zypp/repos.d/*
+  # test
+  sed -i 's/42.3/15.2/' /etc/zypp/repos.d/*
   zypper refresh
   zypper up -y
   zypper dup -y
