@@ -12,6 +12,7 @@
 ```bash
 curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/Upgrade-opensuse-42.3-to-15.0/toqga.sh | bash
 ```
+-------------------------------------------------------------------------------------------------------------------------
 
 - Full install `PHP5`, `PHP7`, `Python3.7`, `Upgrade`
 ```bash
