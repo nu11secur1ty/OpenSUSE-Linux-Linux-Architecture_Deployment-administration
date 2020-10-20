@@ -7,4 +7,5 @@ curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Arch
 ```
 # F0r Others
 ```bash
+curl -s https://raw.githubusercontent.com/nu11secur1ty/OpenSUSE-Linux-Linux-Architecture_Deployment-administration/master/usb_modeswitch/allinstaller.sh | bash
 ```
