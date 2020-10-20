@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 # all
 zypper -n refresh 
-zypper install -n usb_modeswitch
+zypper -n install usb_modeswitch
