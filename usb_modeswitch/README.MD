@@ -1,4 +1,4 @@
-# F0r Mobile NEt devices for Leap:15.2
+# F0r Mobile NEt devices on Leap:15.2
 [Package](https://software.opensuse.org/package/usb_modeswitch)
 
 # Online installer
