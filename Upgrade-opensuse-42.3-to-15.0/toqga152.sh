@@ -5,7 +5,7 @@ zypper up -y
 zypper dup -y
 # Upgrade 
   sleep 3;
-rm /etc/zypp/repos.d/openSUSE-Leap-15.1-1.repo
+# rm /etc/zypp/repos.d/openSUSE-Leap-15.1-1.repo
 ## Sources
 # $releasever
 # 15.1 > 15.2
